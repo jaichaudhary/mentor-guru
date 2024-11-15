@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import BatchDetails from "./components/batch-details/batch-details";
+import Batch from "./components/batch/batch";
+import CommunityAndLearning from "./components/community-learning/community-learning";
+import Footer from "./components/footer/footer";
+import Home from "./components/home/home";
+import Navbar from "./components/navbar/navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Navbar />
+      <Home />
+      <Batch />
+      <CommunityAndLearning />
+      <Footer />
     </div>
   );
 }

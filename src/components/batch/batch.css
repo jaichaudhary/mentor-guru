@@ -1,0 +1,13 @@
+.batch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.batch__heading {
+  text-align: center;
+  font-family: var(--body-font);
+  font-size: var(--big-font-size);
+  color: black;
+  margin-top: 20px;
+}
