@@ -1,9 +1,9 @@
 .home {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
   padding: 0 20px;
 }
@@ -52,6 +52,7 @@
   max-width: 100%; /* Ensures the image doesn’t exceed its container */
   margin-top: 20px;
   border-radius: 10px; /* Optional: Add rounded corners */
+  margin-bottom: 5vh;
 }
 
 /* Media Query for larger screens */
@@ -116,7 +117,7 @@
     font-size: 1rem;
   }
   .home__img {
-    max-width: 400px; /* Adjust image size for small screens */
+    max-width: 350px; /* Adjust image size for small screens */
     height: auto;
   }
 }

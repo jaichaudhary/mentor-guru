@@ -57,12 +57,12 @@ function Navbar({ inView }) {
     >
       <nav className="nav container">
         {/* todo */}
-        {/* <a href="#mentor__guru" className="nav__logo">
+        <a href="#mentor__guru" className="nav__logo">
           Mentor Guru
-        </a> */}
-        <div>
+        </a>
+        {/* <div>
           <img src="img/logo.png" className="nav__img" />
-        </div>
+        </div> */}
 
         <div
           className={`nav__menu ${isNavToggle ? "show__menu" : ""}`}
