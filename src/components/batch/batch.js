@@ -3,7 +3,7 @@ import BatchDetails from "../batch-details/batch-details";
 import "./batch.css";
 
 export default function Batch() {
-  const [activeBatch, setActiveBatch] = useState("2025");
+  const [activeBatch, setActiveBatch] = useState("Prelims");
   return (
     <div className="batch">
       {/* Batch Selector */}
@@ -13,25 +13,54 @@ export default function Batch() {
             className={`batch-details__year-button ${
               activeBatch === "2025" ? "active" : ""
             }`}
-            onClick={() => setActiveBatch("2025")}
+            onClick={() => setActiveBatch("Prelims")}
           >
-            2025
+            Prelims
           </button>
           <button
             className={`batch-details__year-button ${
               activeBatch === "2026" ? "active" : ""
             }`}
-            onClick={() => setActiveBatch("2026")}
+            onClick={() => setActiveBatch("Mains")}
           >
-            2026
+            Mains
           </button>
         </div>
       </section>
 
-      <div className="batch__heading">Focused Learning Program</div>
-      <BatchDetails activeBatch={activeBatch} setActiveBatch={setActiveBatch} />
-      <div className="batch__heading">Focused Learning Program</div>
-      <BatchDetails activeBatch={activeBatch} setActiveBatch={setActiveBatch} />
+      {activeBatch === "Prelims" ? (
+        <>
+          <div className="batch__heading">Focused Learning Program</div>
+          <BatchDetails
+            activeBatch={activeBatch}
+            setActiveBatch={setActiveBatch}
+          />
+          <div className="batch__heading">Focused Learning Program</div>
+          <BatchDetails
+            activeBatch={activeBatch}
+            setActiveBatch={setActiveBatch}
+          />
+        </>
+      ) : (
+        <>
+          {" "}
+          <div className="batch__heading">Focused Learning Program</div>
+          <BatchDetails
+            activeBatch={activeBatch}
+            setActiveBatch={setActiveBatch}
+          />
+          <div className="batch__heading">Focused Learning Program</div>
+          <BatchDetails
+            activeBatch={activeBatch}
+            setActiveBatch={setActiveBatch}
+          />
+          <div className="batch__heading">Focused Learning Program</div>
+          <BatchDetails
+            activeBatch={activeBatch}
+            setActiveBatch={setActiveBatch}
+          />
+        </>
+      )}
     </div>
   );
 }

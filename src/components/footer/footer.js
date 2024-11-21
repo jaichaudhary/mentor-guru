@@ -15,14 +15,15 @@ const Footer = () => {
             <h4 className="footer__subtitle">Follow us</h4>
             {/* Add social media icons/links here */}
             <div className="footer__icons">
-              <a href="/instagram" className="footer__link">
-                <img style={{ height: 30, width: 30 }} src="logo512.png" />
-              </a>
-              <a href="/whatsapp" className="footer__link">
-                <img style={{ height: 30, width: 30 }} src="logo512.png" />
-              </a>
-              <a href="/telegram" className="footer__link">
-                <img style={{ height: 30, width: 30 }} src="logo512.png" />
+              <a
+                href="https://www.instagram.com/mentorguru.in/"
+                target="_blank"
+                className="footer__link"
+              >
+                <img
+                  style={{ height: 30, width: 30 }}
+                  src="img/instagram.png"
+                />
               </a>
             </div>
           </div>
@@ -67,14 +68,8 @@ const Footer = () => {
           <ul className="footer__list">
             <li>
               Student Queries:{" "}
-              <a href="mailto:ask@kalam.in" className="footer__link">
-                ask@kalam.in
-              </a>
-            </li>
-            <li>
-              General Queries:{" "}
-              <a href="mailto:contact@kalam.in" className="footer__link">
-                contact@kalam.in
+              <a href="mailto:ask@mentorguru.in" className="footer__link">
+                ask@mentorguru.in
               </a>
             </li>
           </ul>
