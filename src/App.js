@@ -9,6 +9,7 @@ import Navbar from "./components/navbar/navbar";
 function App() {
   return (
     <div className="app">
+      {/* todo price component */}
       <Navbar />
       <Home />
       <Batch />
