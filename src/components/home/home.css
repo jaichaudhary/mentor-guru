@@ -1,0 +1,208 @@
+.home {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home__heading {
+  font-family: var(--body-font);
+  font-size: 3vw !important; /* Responsive font size */
+  color: #007bff;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 10vh;
+}
+
+.home__sub__heading {
+  font-family: var(--body-font);
+  font-size: 5vw !important; /* Responsive font size */
+  color: #ff6a00;
+  font-weight: var(--font-medium);
+  margin: 0;
+}
+
+span {
+  font-family: var(--body-font);
+  font-size: 2vw !important; /* Responsive font size */
+  color: #202020;
+  font-weight: var(--font-medium);
+  margin-bottom: -15px;
+}
+
+.home__text {
+  color: black;
+  font-size: 1.2vw; /* Responsive font size */
+  margin-top: 10px;
+}
+
+.home__buttom {
+  background-color: #ff6a00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--body-font);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home__buttom:hover {
+  background-color: #e65a00;
+}
+
+.home__img {
+  height: auto;
+  max-width: 100%; /* Ensures the image doesn’t exceed its container */
+  margin-top: 20px;
+  border-radius: 10px; /* Optional: Add rounded corners */
+  margin-bottom: 5vh;
+}
+
+/* Updated CSS for Features Section */
+
+.home__features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Space between the features */
+  margin-top: 20px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000; /* Black text */
+}
+
+.feature__underline {
+  width: 80%; /* Adjust the underline width */
+  height: 4px;
+  background-color: #ff9900; /* Orange underline color */
+  border-radius: 2px;
+  margin-top: 15px;
+  transform: scaleX(0.8); /* Slightly narrower than the text */
+}
+
+
+/* Media Query for larger screens */
+@media (min-width: 1024px) {
+  .home__heading {
+    font-size: 6rem; /* Larger font size for big screens */
+  }
+  .home__sub__heading {
+    font-size: 3rem;
+  }
+  .home__text {
+    font-size: 2rem;
+  }
+  .home__img {
+    max-width: 800px;
+    height: auto;
+  }
+}
+
+/* Media Query for big screens */
+@media (max-width: 1024px) {
+  .home__heading {
+    font-size: 6rem; /* Larger font size for big screens */
+  }
+  .home__sub__heading {
+    font-size: 3rem;
+  }
+  .home__text {
+    font-size: 2rem;
+  }
+  .home__img {
+    max-width: 600px; /* Limit the image size */
+    height: auto;
+  }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .home__heading {
+    font-size: 4rem;
+  }
+  .home__sub__heading {
+    font-size: 1.6rem !important;
+  }
+  .home__text {
+    font-size: 1rem;
+  }
+  .home__img {
+    max-width: 400px; /* Adjust image size for medium screens */
+    height: auto;
+  }
+
+  span {
+    font-family: var(--body-font);
+    font-size: 4vw !important; /* Responsive font size */
+    color: #202020;
+    font-weight: var(--font-medium);
+    margin-bottom: 3px;
+    margin-top: 5px;
+  }
+
+  .home__heading {
+    font-family: var(--body-font);
+    font-size: 6vw !important; /* Responsive font size */
+    color: #007bff;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 10vh;
+  }
+
+  .feature__underline {
+    width: 80%; /* Adjust the underline width */
+    height: 4px;
+    background-color: #ff9900; /* Orange underline color */
+    border-radius: 2px;
+    margin-top: 10px !important;
+    transform: scaleX(0.8); /* Slightly narrower than the text */
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .home__heading {
+    font-size: 3.5rem;
+  }
+  .home__sub__heading {
+    font-size: 1.5rem;
+  }
+  .home__text {
+    font-size: 1rem;
+  }
+  .home__img {
+    max-width: 350px; /* Adjust image size for small screens */
+    height: auto;
+  }
+
+  span {
+    font-family: var(--body-font);
+    font-size: 4vw !important; /* Responsive font size */
+    color: #202020;
+    font-weight: var(--font-medium);
+    
+  }
+
+  .feature__underline {
+    width: 80%; /* Adjust the underline width */
+    height: 4px;
+    background-color: #ff9900; /* Orange underline color */
+    border-radius: 2px;
+    margin-top: 5px !important;
+    transform: scaleX(0.8); /* Slightly narrower than the text */
+  }
+}

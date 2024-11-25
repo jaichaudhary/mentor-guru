@@ -1,0 +1,127 @@
+/*==================== LAYOUT ====================*/
+.container {
+  margin-left: var(--mb-1-5);
+  margin-right: var(--mb-1-5);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Header styles for desktop */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0; /* Sticky at the top for desktop */
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--nav-back-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  display: flex; /* Align items in a single row */
+  justify-content: space-between; /* Push logo to the left and button to the right */
+  align-items: center; /* Vertically center logo and button */
+  padding: 10px 20px;
+}
+
+/*==================== NAV ====================*/
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--nav-color);
+  font-weight: var(--font-medium);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.nav__img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+}
+
+.nav__login {
+  color: var(--nav-color);
+  font-weight: var(--font-medium);
+  background-color: pink;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.nav__call-icon {
+  font-size: 1.2rem;
+}
+
+.nav__login:hover {
+  background-color: #f5a2a2;
+  color: var(--first-color);
+}
+
+/* Mobile-specific styles */
+@media screen and (max-width: 767px) {
+  .header {
+    top: auto; /* Reset top for mobile */
+    bottom: 0; /* Sticky at the bottom */
+    display: flex;
+    justify-content: space-between; /* Space between logo and button */
+    align-items: center;
+    padding: 10px 15px;
+  }
+
+  .nav__logo {
+    font-size: 0.8rem;
+  }
+
+  .nav__img {
+    height: 30px; /* Adjust logo size for mobile */
+    margin-right: 5px;
+  }
+
+  .nav__login {
+    font-size: 0.8rem; /* Adjust button text size */
+    padding: 8px 12px;
+    gap: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    top: 0;
+    bottom: initial;
+    flex-direction: row; /* Ensure items align horizontally in desktop */
+    padding: 10px 20px;
+  }
+
+  .nav__logo {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__login {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    justify-content: center;
+  }
+
+  .nav__btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
