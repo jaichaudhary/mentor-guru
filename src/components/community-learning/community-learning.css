@@ -9,7 +9,11 @@
 
 .community-section {
   text-align: center;
+<<<<<<< HEAD
   max-width: 800px;
+=======
+  max-width: 600px;
+>>>>>>> origin/master
 }
 
 .community-icons {
@@ -20,16 +24,24 @@
 }
 
 .community-icon {
+<<<<<<< HEAD
   width: 350px;
   height: 350px;
+=======
+  width: 250px;
+  height: 250px;
+>>>>>>> origin/master
   border-radius: 50%;
   object-fit: cover;
 }
 
+<<<<<<< HEAD
 .community-icons img {
   width: 60%;
 }
 
+=======
+>>>>>>> origin/master
 .join-community-button {
   background-color: #007bff;
   color: #fff;
@@ -93,6 +105,7 @@
     text-align: center;
   }
 }
+<<<<<<< HEAD
 
 
 
@@ -102,3 +115,5 @@
   }
 
 }
+=======
+>>>>>>> origin/master

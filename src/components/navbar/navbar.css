@@ -1,5 +1,9 @@
 /*==================== LAYOUT ====================*/
 .container {
+<<<<<<< HEAD
+=======
+  /* max-width: 1024px; */
+>>>>>>> origin/master
   margin-left: var(--mb-1-5);
   margin-right: var(--mb-1-5);
 }
@@ -9,6 +13,7 @@
   gap: 1.5rem;
 }
 
+<<<<<<< HEAD
 /* Header styles for desktop */
 .header {
   width: 100%;
@@ -22,16 +27,30 @@
   justify-content: space-between; /* Push logo to the left and button to the right */
   align-items: center; /* Vertically center logo and button */
   padding: 10px 20px;
+=======
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--nav-back-color);
+>>>>>>> origin/master
 }
 
 /*==================== NAV ====================*/
 .nav {
+<<<<<<< HEAD
   width: 100%;
+=======
+  height: var(--header-height);
+>>>>>>> origin/master
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+<<<<<<< HEAD
 .nav__logo {
   color: var(--nav-color);
   font-weight: var(--font-medium);
@@ -44,16 +63,56 @@
   height: 50px;
   width: auto;
   margin-right: 10px;
+=======
+.nav__logo,
+.nav__show,
+.nav__toggle {
+  color: var(--nav-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__img {
+  height: 100px;
+  width: 150px;
+>>>>>>> origin/master
 }
 
 .nav__logo:hover {
   color: var(--first-color);
 }
 
+<<<<<<< HEAD
+=======
+.nav__toggle {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav__toggle:hover {
+  color: var(--first-color);
+}
+
+.nav__btns {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.nav__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+>>>>>>> origin/master
 .nav__login {
   color: var(--nav-color);
   font-weight: var(--font-medium);
   background-color: pink;
+<<<<<<< HEAD
   padding: 8px 15px;
   border-radius: 5px;
   display: flex;
@@ -97,10 +156,75 @@
     padding: 8px 12px;
     gap: 8px;
   }
+=======
+  padding: 2px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-option-color);
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+
+  .nav__show {
+    display: none;
+  }
+}
+
+.nav__list {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--small-font-size);
+  color: var(--nav-color);
+  font-weight: var(--font-medium);
+}
+
+.nav__link:hover {
+  color: var(--first-color);
+}
+
+.nav__icon {
+  font-size: 1.2rem;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.3rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--nav-color);
+}
+
+.nav__close:hover {
+  color: var(--first-color-alt);
+}
+
+/* show menu */
+.show__menu {
+  bottom: 0;
+>>>>>>> origin/master
 }
 
 @media screen and (min-width: 768px) {
   .header {
+<<<<<<< HEAD
     top: 0;
     bottom: initial;
     flex-direction: row; /* Ensure items align horizontally in desktop */
@@ -123,5 +247,34 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+=======
+    top: 0px;
+    bottom: initial;
+  }
+
+  .header,
+  .main {
+    padding: 0 1rem;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 1rem;
+  }
+
+  .nav__icon,
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+>>>>>>> origin/master
   }
 }

@@ -5,7 +5,11 @@ const CommunityAndLearning = () => {
   return (
     <div className="section-container">
       {/* Top Section: Community */}
+<<<<<<< HEAD
       <div className="community-section"> 
+=======
+      <div className="community-section">
+>>>>>>> origin/master
         <div className="community-icons">
           {/* Replace with actual icons/images of people and decorative elements */}
           <img src="community.svg" alt="community" className="community-icon" />
@@ -30,7 +34,11 @@ const CommunityAndLearning = () => {
       <div className="learning-section">
         <div className="learning-image">
           {/* Replace with actual image URL */}
+<<<<<<< HEAD
           <img src="contact.svg" alt="Learning illustration" />
+=======
+          <img src="tutorial.svg" alt="Learning illustration" />
+>>>>>>> origin/master
         </div>
         <div className="learning-content">
           <h2>

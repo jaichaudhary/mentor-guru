@@ -10,7 +10,11 @@
 
 .home__heading {
   font-family: var(--body-font);
+<<<<<<< HEAD
   font-size: 3vw !important; /* Responsive font size */
+=======
+  font-size: 5vw; /* Responsive font size */
+>>>>>>> origin/master
   color: #007bff;
   font-weight: bold;
   margin: 0;
@@ -19,12 +23,18 @@
 
 .home__sub__heading {
   font-family: var(--body-font);
+<<<<<<< HEAD
   font-size: 5vw !important; /* Responsive font size */
   color: #ff6a00;
+=======
+  font-size: 2.5vw; /* Responsive font size */
+  color: black;
+>>>>>>> origin/master
   font-weight: var(--font-medium);
   margin: 0;
 }
 
+<<<<<<< HEAD
 span {
   font-family: var(--body-font);
   font-size: 2vw !important; /* Responsive font size */
@@ -33,6 +43,8 @@ span {
   margin-bottom: -15px;
 }
 
+=======
+>>>>>>> origin/master
 .home__text {
   color: black;
   font-size: 1.2vw; /* Responsive font size */
@@ -63,6 +75,7 @@ span {
   margin-bottom: 5vh;
 }
 
+<<<<<<< HEAD
 /* Updated CSS for Features Section */
 
 .home__features {
@@ -95,6 +108,8 @@ span {
 }
 
 
+=======
+>>>>>>> origin/master
 /* Media Query for larger screens */
 @media (min-width: 1024px) {
   .home__heading {
@@ -135,7 +150,11 @@ span {
     font-size: 4rem;
   }
   .home__sub__heading {
+<<<<<<< HEAD
     font-size: 1.6rem !important;
+=======
+    font-size: 2rem;
+>>>>>>> origin/master
   }
   .home__text {
     font-size: 1rem;
@@ -144,6 +163,7 @@ span {
     max-width: 400px; /* Adjust image size for medium screens */
     height: auto;
   }
+<<<<<<< HEAD
 
   span {
     font-family: var(--body-font);
@@ -172,6 +192,8 @@ span {
     transform: scaleX(0.8); /* Slightly narrower than the text */
   }
   
+=======
+>>>>>>> origin/master
 }
 
 @media (max-width: 480px) {
@@ -188,6 +210,7 @@ span {
     max-width: 350px; /* Adjust image size for small screens */
     height: auto;
   }
+<<<<<<< HEAD
 
   span {
     font-family: var(--body-font);
@@ -205,4 +228,6 @@ span {
     margin-top: 5px !important;
     transform: scaleX(0.8); /* Slightly narrower than the text */
   }
+=======
+>>>>>>> origin/master
 }
