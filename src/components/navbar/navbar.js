@@ -7,7 +7,7 @@ function Navbar() {
     <header className="header">
       {/* Logo Section */}
       <a href="#mentor__guru" className="nav__logo">
-        <img src="logo.svg" alt="Logo" className="nav__img" />
+        <img src="Logo.svg" alt="Logo" className="nav__img" />
         
       </a>
 
