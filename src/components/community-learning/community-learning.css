@@ -9,11 +9,7 @@
 
 .community-section {
   text-align: center;
-<<<<<<< HEAD
   max-width: 800px;
-=======
-  max-width: 600px;
->>>>>>> origin/master
 }
 
 .community-icons {
@@ -24,24 +20,16 @@
 }
 
 .community-icon {
-<<<<<<< HEAD
   width: 350px;
   height: 350px;
-=======
-  width: 250px;
-  height: 250px;
->>>>>>> origin/master
   border-radius: 50%;
   object-fit: cover;
 }
 
-<<<<<<< HEAD
 .community-icons img {
   width: 60%;
 }
 
-=======
->>>>>>> origin/master
 .join-community-button {
   background-color: #007bff;
   color: #fff;
@@ -76,9 +64,9 @@
   font-family: var(--body-font);
 }
 
-.learning-content-para{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.learning-content-para {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .mentorguru-highlight {
@@ -105,15 +93,9 @@
     text-align: center;
   }
 }
-<<<<<<< HEAD
-
-
 
 @media (max-width: 480px) {
   .community-icons img {
     width: 100%;
   }
-
 }
-=======
->>>>>>> origin/master

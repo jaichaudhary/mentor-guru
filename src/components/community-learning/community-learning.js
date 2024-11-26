@@ -5,11 +5,7 @@ const CommunityAndLearning = () => {
   return (
     <div className="section-container">
       {/* Top Section: Community */}
-<<<<<<< HEAD
-      <div className="community-section"> 
-=======
       <div className="community-section">
->>>>>>> origin/master
         <div className="community-icons">
           {/* Replace with actual icons/images of people and decorative elements */}
           <img src="community.svg" alt="community" className="community-icon" />
@@ -34,24 +30,25 @@ const CommunityAndLearning = () => {
       <div className="learning-section">
         <div className="learning-image">
           {/* Replace with actual image URL */}
-<<<<<<< HEAD
           <img src="contact.svg" alt="Learning illustration" />
-=======
-          <img src="tutorial.svg" alt="Learning illustration" />
->>>>>>> origin/master
         </div>
         <div className="learning-content">
           <h2>
             Have a doubt?
-            {/* <span className="mentorguru-highlight">Mentor Guru</span> */}
           </h2>
           <p className="learning-content-para">
             Start your preparation for UPSC exam. Ask your first question now.
           </p>
-          {/* <button className="start-now-button">Start Now — it's FREE</button> */}
-          <div style={{display:'flex', flexDirection:'row', gap: 10, alignItems:'center'}}>
-          <img src="img/whatsapp.png" style={{ height: 20, width: 20 }} />
-          <span>9205053891 / 7086551761</span>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              gap: 10,
+              alignItems: "center",
+            }}
+          >
+            <img src="img/whatsapp.png" style={{ height: 20, width: 20 }} alt="WhatsApp icon" />
+            <span>9205053891 / 7086551761</span>
           </div>
         </div>
       </div>
