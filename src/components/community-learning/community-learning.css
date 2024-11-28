@@ -16,19 +16,16 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 20px;
+  background-color: #0056b3;
 }
 
 .community-icon {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 600px;
+  height: 600px;
+  object-fit: fill;
 }
 
-.community-icons img {
-  width: 60%;
-}
+
 
 .join-community-button {
   background-color: #007bff;
@@ -37,6 +34,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .join-community-button:hover {
@@ -92,10 +90,20 @@
     align-items: center;
     text-align: center;
   }
+  .community-icon {
+    width: 350px;
+    height: 350px;
+
+  }
 }
 
 @media (max-width: 480px) {
   .community-icons img {
     width: 100%;
+  }
+  .community-icon {
+    width: 350px;
+    height: 350px;
+
   }
 }

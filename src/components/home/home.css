@@ -11,7 +11,7 @@
 .home__heading {
   font-family: var(--body-font);
   font-size: 3vw !important; /* Responsive font size */
-  color: #007bff;
+  color: #ff6a00;
   font-weight: bold;
   margin: 0;
   margin-top: 10vh;
@@ -20,7 +20,7 @@
 .home__sub__heading {
   font-family: var(--body-font);
   font-size: 2.5vw; /* Responsive font size */
-  color: #ff6a00;
+  color: #007bff;
   font-weight: var(--font-medium);
   margin: 0;
 }

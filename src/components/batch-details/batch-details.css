@@ -68,8 +68,8 @@
 }
 
 .batch-details__guidance {
-  color: #ff6a00;
-  font-weight: bold;
+  color: #007bff;
+  font-weight: bold; 
   font-family: var(--body-font);
 }
 

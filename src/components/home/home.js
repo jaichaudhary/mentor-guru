@@ -11,7 +11,7 @@ export default function Home() {
       {/* Updated Features Section */}
       <div className="home__features">
         <div className="feature">
-          <span>Credible Faculty</span>
+          <span>Trusted Mentor</span>
           <div className="feature__underline"></div>
         </div>
 

@@ -21,7 +21,7 @@
   display: flex; /* Align items in a single row */
   justify-content: space-between; /* Push logo to the left and button to the right */
   align-items: center; /* Vertically center logo and button */
-  padding: 10px 20px;
+  padding: 5px 20px !important;
 }
 
 /*==================== NAV ====================*/
@@ -51,9 +51,9 @@
 }
 
 .nav__login {
-  color: var(--nav-color);
+  color: #fff;
   font-weight: var(--font-medium);
-  background-color: pink;
+  background-color: #007bff;
   padding: 8px 15px;
   border-radius: 5px;
   display: flex;
@@ -65,12 +65,18 @@
 
 .nav__call-icon {
   font-size: 1.2rem;
+  color: #fff;
+}
+
+/* .nav__call-icon:hover {
+  font-size: 1.2rem;
+  color: orange;
 }
 
 .nav__login:hover {
-  background-color: #f5a2a2;
-  color: var(--first-color);
-}
+  background-color: #007bff;
+  color: orange;
+} */
 
 /* Mobile-specific styles */
 @media screen and (max-width: 767px) {

@@ -12,10 +12,7 @@ const CommunityAndLearning = () => {
           {/* Add more icons if needed */}
         </div>
         <h2>You are not alone in this journey</h2>
-        <p className="learning-content-para">
-          Meet 30,000+ aspirants and access handwritten notes, mind-maps, and
-          practice with Daily Targets
-        </p>
+      
         <button
           onClick={() => {
             window.open("https://t.me/dipendradhikari", "_blank");
@@ -29,7 +26,6 @@ const CommunityAndLearning = () => {
       {/* Bottom Section: Discover SuperKalam */}
       <div className="learning-section">
         <div className="learning-image">
-          {/* Replace with actual image URL */}
           <img src="contact.svg" alt="Learning illustration" />
         </div>
         <div className="learning-content">

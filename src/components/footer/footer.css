@@ -40,7 +40,10 @@
 }
 
 .footer__list li {
-  margin-bottom: 8px;
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Vertically center items */
+  gap: 8px; /* Add spacing between the icon and text */
+  margin-bottom: 8px; /* Keep the existing margin */
 }
 
 .footer__link {
@@ -73,4 +76,13 @@
 .footer__icons {
   display: flex;
   gap: 10px;
+}
+
+.nav__call-icon {
+  font-size: 1.2rem; /* Adjust icon size if necessary */
+  color: #007bff; /* Optional: match the link color */
+}
+
+.nav__call-icons {
+  color: #007bff;
 }

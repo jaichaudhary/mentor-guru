@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { UilPhone } from "@iconscout/react-unicons";
 
 const Footer = () => {
   return (
@@ -9,9 +10,8 @@ const Footer = () => {
         <div className="footer__section">
           <h2 className="footer__title">Mentor Guru</h2>
           <p className="footer__description">
-            Mentor Guru is your personal mentor to help UPSC students in their
-            exam preparation.
-          </p>
+            Unlock your Potential with Mentor Guru's Customized Support.
+            </p>
         </div>
 
         {/* Column 2: Follow Us */}
@@ -37,6 +37,14 @@ const Footer = () => {
         <div className="footer__section">
           <h4 className="footer__subtitle">Contact Us</h4>
           <ul className="footer__list">
+          <li>
+  Call Us:{" "}
+  <UilPhone className="nav__call-icons" />
+  <a href="tel:9205053891" className="footer__link">
+    9205053891 / 7086551761
+  </a>
+</li>
+
             <li>
               Student Queries:{" "}
               <a href="mailto:ask@mentorguru.in" className="footer__link">

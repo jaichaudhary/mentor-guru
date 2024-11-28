@@ -9,33 +9,21 @@ export default function Batch() {
   const batchPrograms = {
     Prelims: [
       {
-        guidance: "✨ Personalised Mentorship",
+        guidance: "✨ Customized Support",
         title: "Prelims Kaushal",
         features: [
           "👥 Complete supervision by Dipendra Adhikari sir",
           "⭐ Continuous one-on-one mentoring by interview appeared mentors",
           "∞ Five revisions before prelims",
         ],
-        image: "mentorship1.jpg",
+        image: "prelims.svg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
         brochureLink: "https://drive.google.com/file/d/1GRjNyNXFtANIGbhsuVMgmr0gLvDSRAcL/view?usp=sharing",
       },
     ],
     Mains: [
       {
-        guidance: "✨ Personalised Mentorship",
-        title: "Moksha",
-        features: [
-          "👥 Regular group sessions by Dipendra Adhikari sir",
-          "⭐ Continuous one-on-one mentoring by interview appeared mentors",
-          "∞ Comprehensive coverage of major subjects in a time-bound manner",
-        ],
-        image: "Metorship4.svg",
-        buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1bjMtbpk2RCEj0jzN1pXYfMre4Z-KML98/view?usp=sharing",
-      },
-      {
-        guidance: "✨ Personalised Mentorship",
+        guidance: "✨ Customized Support",
         title: "Moksha Plus",
         features: [
           "👥 Regular group sessions by Dipendra Adhikari sir",
@@ -47,7 +35,22 @@ export default function Batch() {
         brochureLink: "https://drive.google.com/file/d/1bjMtbpk2RCEj0jzN1pXYfMre4Z-KML98/view?usp=sharing",
       },
       {
-        guidance: "✨ Personalised Mentorship",
+        guidance: "✨ Customized Support",
+        title: "Moksha",
+        features: [
+          "👥 Regular group sessions by Dipendra Adhikari sir",
+          "⭐ Continuous one-on-one mentoring by interview appeared mentors",
+          "∞ Comprehensive coverage of major subjects in a time-bound manner",
+        ],
+        image: "Metorship4.svg",
+        buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
+        brochureLink: "https://drive.google.com/file/d/1bjMtbpk2RCEj0jzN1pXYfMre4Z-KML98/view?usp=sharing",
+      },
+      
+    ],
+    "Answer Writing": [
+      {
+        guidance: "✨ Customized Support",
         title: "Mains warriors 2025",
         features: [
           "👥 LIVE evaluation of 1000 answers or 800 answers and 20 essays.",
@@ -58,10 +61,8 @@ export default function Batch() {
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
         brochureLink: "https://drive.google.com/file/d/1SSBDdGVBAAT8LnCmPiNUB-35wMdzxpQu/view?usp=sharing",
       },
-    ],
-    "Answer Writing": [
       {
-        guidance: "✨ Personalised Mentorship",
+        guidance: "✨ Customized Support",
         title: "SAMARTH",
         features: [
           "👥 Daily answer writing course for 2 months",
