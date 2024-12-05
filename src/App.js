@@ -1,21 +1,37 @@
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-// import BatchDetails from "./components/batch-details/batch-details";
-import Batch from "./components/batch/batch";
-import CommunityAndLearning from "./components/community-learning/community-learning";
+
+import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 import Home from "./components/home/home";
-import Navbar from "./components/navbar/navbar";
+import Batch from "./components/batch/batch";
+import CommunityAndLearning from "./components/community-learning/community-learning";
+import PrivacyPolicy from "./components/policy/PrivacyPolicy";
+import TermsAndConditions from "./components/policy/TermsAndConditions";
 
 function App() {
   return (
-    <div className="app">
-      {/* todo price component */}
-      <Navbar />
-      <Home />
-      <Batch />
-      <CommunityAndLearning />
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Batch />
+                <CommunityAndLearning />
+              </>
+            }
+          />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <header className="header">
       {/* Logo Section */}
-      <a href="#mentor__guru" className="nav__logo">
+      <a href="/" className="nav__logo">
         <img src="Logo.svg" alt="Logo" className="nav__img" />
         
       </a>

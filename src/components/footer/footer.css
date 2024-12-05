@@ -48,11 +48,27 @@
 
 .footer__link {
   text-decoration: none;
-  color: #007bff;
+  color: #007bff; /* Blue link color for consistency */
+  font-size: 0.9rem;
 }
 
 .footer__link:hover {
   text-decoration: underline;
+  color: #0056b3; /* Darker shade on hover */
+}
+
+.footer__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav__call-icon {
+  font-size: 1.2rem; /* Adjust icon size if necessary */
+  color: #007bff; /* Match the link color */
+}
+
+.nav__call-icons {
+  color: #007bff;
 }
 
 .footer__bottom {
@@ -65,24 +81,36 @@
   margin-bottom: 10px;
 }
 
-.footer__policy-list {
-  list-style: none;
-  padding: 0;
+.footer__policy-links {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.footer__icons {
+.footer__policy-link {
+  text-decoration: none;
+  color: #333; /* Match footer text color */
+  font-size: 0.9rem;
+}
+
+.footer__policy-link:hover {
+  color: #007bff; /* Highlight color on hover */
+  text-decoration: underline;
+}
+
+.footer__links {
+  margin-bottom: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
+  flex-direction: row;
+  
 }
 
-.nav__call-icon {
-  font-size: 1.2rem; /* Adjust icon size if necessary */
-  color: #007bff; /* Optional: match the link color */
-}
-
-.nav__call-icons {
+.footer__divider {
+  
   color: #007bff;
+  
 }

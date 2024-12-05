@@ -15,7 +15,7 @@ const CommunityAndLearning = () => {
       
         <button
           onClick={() => {
-            window.open("https://t.me/dipendradhikari", "_blank");
+            window.open("https://t.me/+9AibgMTEC8I3YzBl", "_blank");
           }}
           className="join-community-button"
         >
@@ -35,16 +35,16 @@ const CommunityAndLearning = () => {
           <p className="learning-content-para">
             Start your preparation for UPSC exam. Ask your first question now.
           </p>
-          <div
+          <div className="whatsapp"
             style={{
               display: "flex",
               flexDirection: "row",
               gap: 10,
-              alignItems: "center",
+              alignItems: "flex-end",
             }}
           >
             <img src="img/whatsapp.png" style={{ height: 20, width: 20 }} alt="WhatsApp icon" />
-            <span>9205053891 / 7086551761</span>
+            <div>9205053891 / 7086551761</div>
           </div>
         </div>
       </div>

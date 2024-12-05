@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { UilPhone } from "@iconscout/react-unicons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <h2 className="footer__title">Mentor Guru</h2>
           <p className="footer__description">
             Unlock your Potential with Mentor Guru's Customized Support.
-            </p>
+          </p>
         </div>
 
         {/* Column 2: Follow Us */}
@@ -37,14 +38,13 @@ const Footer = () => {
         <div className="footer__section">
           <h4 className="footer__subtitle">Contact Us</h4>
           <ul className="footer__list">
-          <li>
-  Call Us:{" "}
-  <UilPhone className="nav__call-icons" />
-  <a href="tel:9205053891" className="footer__link">
-    9205053891 / 7086551761
-  </a>
-</li>
-
+            <li>
+              Call Us:{" "}
+              <UilPhone className="nav__call-icons" />
+              <a href="tel:9205053891" className="footer__link">
+                9205053891 / 7086551761
+              </a>
+            </li>
             <li>
               Student Queries:{" "}
               <a href="mailto:ask@mentorguru.in" className="footer__link">
@@ -53,6 +53,19 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+
+      {/* Footer Links Section */}
+      <div className="footer__links">
+        <Link to="/privacy-policy" className="footer__link">
+          Privacy Policy
+        </Link>
+        <div className="footer__divider">
+          |
+        </div>
+        <Link to="/terms-and-conditions" className="footer__link">
+          Terms and Conditions
+        </Link>
       </div>
     </footer>
   );
