@@ -13,7 +13,7 @@ export default function Batch() {
         title: "Prelims Kaushal",
         features: [
           "👥 Complete supervision by Dipendra Adhikari sir",
-          "⭐ Continuous one-on-one mentoring by interview appeared mentors",
+          "⭐ Continuous one-on-one mentoring by interview appeared EXPERIENCED mentors",
           "∞ Five revisions before prelims",
         ],
         image: "prelims.svg",
@@ -27,7 +27,7 @@ export default function Batch() {
         title: "Moksha Plus",
         features: [
           "👥 Regular group sessions by Dipendra Adhikari sir",
-          "⭐ Continuous one-on-one mentoring by interview appeared mentors",
+          "⭐ Continuous one-on-one mentoring by interview appeared EXPERIENCED mentors",
           "∞ Comprehensive coverage of major + minor subjects in a time-bound manner",
         ],
         image: "Metorship3.svg",
@@ -39,7 +39,7 @@ export default function Batch() {
         title: "Moksha",
         features: [
           "👥 Regular group sessions by Dipendra Adhikari sir",
-          "⭐ Continuous one-on-one mentoring by interview appeared mentors",
+          "⭐ Continuous one-on-one mentoring by interview appeared EXPERIENCED mentors",
           "∞ Comprehensive coverage of major subjects in a time-bound manner",
         ],
         image: "Metorship4.svg",

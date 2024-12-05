@@ -15,7 +15,7 @@ const CommunityAndLearning = () => {
       
         <button
           onClick={() => {
-            window.open("https://t.me/dipendradhikari", "_blank");
+            window.open("https://t.me/+9AibgMTEC8I3YzBl", "_blank");
           }}
           className="join-community-button"
         >
