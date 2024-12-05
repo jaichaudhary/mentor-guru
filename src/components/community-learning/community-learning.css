@@ -83,6 +83,13 @@
   background-color: #e65a00;
 }
 
+@media (min-width: 768px) {
+  .whatsapp img {
+    height: 30px !important;
+    width: 30px !important;
+   }
+} 
+
 @media (max-width: 768px) {
   .learning-section {
     flex-direction: column;
