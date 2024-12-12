@@ -1,35 +1,18 @@
-/*==================== LAYOUT ====================*/
-.container {
-  margin-left: var(--mb-1-5);
-  margin-right: var(--mb-1-5);
-}
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-/* Header styles for desktop */
+/*==================== NAV ====================*/
 .header {
   width: 100%;
   position: fixed;
-  top: 0; /* Sticky at the top for desktop */
-  left: 0;
-  z-index: var(--z-fixed);
+  top: 40px; /* Push down the Navbar below the TopStrip */
+  z-index: 999; /* Ensure Navbar stays below TopStrip */
   background-color: var(--nav-back-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
-  display: flex; /* Align items in a single row */
-  justify-content: space-between; /* Push logo to the left and button to the right */
-  align-items: center; /* Vertically center logo and button */
-  padding: 5px 20px !important;
-}
-
-/*==================== NAV ====================*/
-.nav {
-  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 20px !important;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .nav__logo {
@@ -44,10 +27,6 @@
   height: 50px;
   width: auto;
   margin-right: 10px;
-}
-
-.nav__logo:hover {
-  color: var(--first-color);
 }
 
 .nav__login {
@@ -68,25 +47,15 @@
   color: #fff !important;
 }
 
-/* .nav__call-icon:hover {
-  font-size: 1.2rem;
-  color: orange;
-}
-
-.nav__login:hover {
-  background-color: #007bff;
-  color: orange;
-} */
-
 /* Mobile-specific styles */
 @media screen and (max-width: 767px) {
   .header {
-    top: auto; /* Reset top for mobile */
-    bottom: 0; /* Sticky at the bottom */
-    display: flex;
-    justify-content: space-between; /* Space between logo and button */
-    align-items: center;
+    position: fixed; /* Fix the navbar to the bottom for mobile */
+    bottom: 0;
+    top: initial; /* Remove top positioning */
+    z-index: 1000; /* Ensure it stays above content */
     padding: 10px 15px;
+    background-color: var(--nav-back-color);
   }
 
   .nav__logo {
@@ -107,7 +76,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    top: 0;
+    top: 40px; /* Push Navbar below TopStrip */
     bottom: initial;
     flex-direction: row; /* Ensure items align horizontally in desktop */
     padding: 10px 20px;

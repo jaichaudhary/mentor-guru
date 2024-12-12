@@ -9,11 +9,14 @@ import Batch from "./components/batch/batch";
 import CommunityAndLearning from "./components/community-learning/community-learning";
 import PrivacyPolicy from "./components/policy/PrivacyPolicy";
 import TermsAndConditions from "./components/policy/TermsAndConditions";
+import TopStrip from "./components/topstrip/TopStrip";
+import FAQ from "./components/faq/faq";
 
 function App() {
   return (
     <Router>
       <div className="app">
+        <TopStrip />
         <Navbar />
         <Routes>
           <Route
@@ -29,6 +32,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         </Routes>
+        <FAQ />
         <Footer />
       </div>
     </Router>

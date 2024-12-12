@@ -31,6 +31,30 @@ const Footer = () => {
                 alt="Instagram"
               />
             </a>
+            <a
+              href="https://www.instagram.com/mentorguru.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+            >
+              <img
+                style={{ height: 30, width: 30 }}
+                src="img/facebook.png"
+                alt="Facebook"
+              />
+            </a>
+            <a
+              href="https://www.youtube.com/@Mentorguru-IAS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+            >
+              <img
+                style={{ height: 30, width: 30 }}
+                src="img/youtube.png"
+                alt="Youtube"
+              />
+            </a>
           </div>
         </div>
 
@@ -49,6 +73,12 @@ const Footer = () => {
               Student Queries:{" "}
               <a href="mailto:ask@mentorguru.in" className="footer__link">
                 ask@mentorguru.in
+              </a>
+            </li>
+            <li>
+              Address:{" "}
+              <a href="" className="footer__link">
+                Sector 44, Near Botanical Garden Meteo Station, Noida Pin code 201303
               </a>
             </li>
           </ul>
