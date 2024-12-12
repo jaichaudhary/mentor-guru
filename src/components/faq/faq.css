@@ -1,0 +1,124 @@
+/*==================== FAQ Component ====================*/
+.faq__container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--mb-1-5);
+    padding: 0 var(--mb-1); /* Add padding for smaller screens */
+  }
+  
+  .faq__item {
+    background-color: var(--container-color);
+    border: 1px solid var(--text-color-light);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .faq__item--active {
+    border-color: var(--first-color);
+    background-color: var(--first-color-lighter);
+  }
+  
+  .faq__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+  }
+  
+  .faq__icon {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    transition: transform 0.3s ease;
+  }
+  
+  .faq__answer {
+    margin-top: var(--mb-0-5);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    overflow: hidden;
+  }
+  
+  .faq__item--active .faq__icon {
+    transform: rotate(180deg);
+  }
+  
+  /*==================== Responsive Design ====================*/
+  
+  /* Mobile View (Up to 576px) */
+  @media screen and (max-width: 576px) {
+    .faq__container {
+      padding: 0 var(--mb-0-5); /* Reduce horizontal padding */
+      gap: var(--mb-1); /* Reduce gap between items */
+    }
+  
+    .faq__item {
+      padding: 0.75rem; /* Reduce padding for smaller screens */
+    }
+  
+    .faq__question {
+      font-size: var(--small-font-size); /* Smaller font size for questions */
+    }
+  
+    .faq__icon {
+      font-size: 1.25rem; /* Adjust icon size */
+    }
+  
+    .faq__answer {
+      font-size: var(--small-font-size); /* Smaller font size for answers */
+    }
+  }
+  
+  /* Tablet View (577px to 1024px) */
+  @media screen and (min-width: 577px) and (max-width: 1024px) {
+    .faq__container {
+      padding: 0 var(--mb-1); /* Standard padding for tablet screens */
+      gap: var(--mb-1-5); /* Maintain consistent spacing */
+    }
+  
+    .faq__item {
+      padding: 1rem; /* Default padding */
+    }
+  
+    .faq__question {
+      font-size: var(--normal-font-size); /* Standard font size */
+    }
+  
+    .faq__icon {
+      font-size: 1.5rem; /* Default icon size */
+    }
+  
+    .faq__answer {
+      font-size: var(--normal-font-size); /* Standard font size */
+    }
+  }
+  
+  /* Laptop/Desktop View (Above 1024px) */
+  @media screen and (min-width: 1025px) {
+    .faq__container {
+      padding: 0 var(--mb-2); /* Add more padding for larger screens */
+      gap: var(--mb-2); /* Increase gap between items */
+    }
+  
+    .faq__item {
+      padding: 1.25rem; /* Increase padding for a spacious look */
+    }
+  
+    .faq__question {
+      font-size: var(--h3-font-size); /* Larger font size for questions */
+    }
+  
+    .faq__icon {
+      font-size: 1.75rem; /* Slightly larger icon size */
+    }
+  
+    .faq__answer {
+      font-size: var(--normal-font-size); /* Standard font size */
+    }
+  }
+  
