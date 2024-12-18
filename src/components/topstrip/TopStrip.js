@@ -4,7 +4,7 @@ import "./topstrip.css";
 function TopStrip() {
   return (
     <div className="topstrip">
-      Cleared UPSC Mains 2024? 
+      Get 1:1 DAF analysis with Dipendra Adhikari
       <a 
         href="https://forms.gle/AMMQNJDRif5PK1oVA" 
         target="_blank" 

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./TermsAndConditions.css";
 
 const TermsAndConditions = () => {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="terms-and-conditions">
       <div className="terms-container">
@@ -17,9 +22,6 @@ const TermsAndConditions = () => {
           this page to review the then current terms and conditions to which
           you are bound.
         </p>
-
-        <h2>Refund Policy</h2>
-        <p>There is no Refund policy as such for now.</p>
 
         <h2>Disclaimers</h2>
         <p>

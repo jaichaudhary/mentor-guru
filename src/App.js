@@ -11,6 +11,7 @@ import PrivacyPolicy from "./components/policy/PrivacyPolicy";
 import TermsAndConditions from "./components/policy/TermsAndConditions";
 import TopStrip from "./components/topstrip/TopStrip";
 import FAQ from "./components/faq/faq";
+import Refund from "./components/policy/Refund";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="/refund-policy" element={<Refund />} />
         </Routes>
         <FAQ />
         <Footer />
