@@ -4,6 +4,7 @@ import "./PrivacyPolicy.css";
  const Refund = () => {
 
     useEffect(() => {
+      console.log("Hello World")
         window.scrollTo(0, 0);
       }, []);
 
