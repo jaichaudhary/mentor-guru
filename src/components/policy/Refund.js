@@ -14,7 +14,7 @@ import "./PrivacyPolicy.css";
       <div className="privacy-container">
       <h1 className="terms-title">Refund Policy</h1>
       <h2>Refund Policy</h2>
-      <p>There is no Refund policy as such for now.</p>
+      <p>At present, we do not have a refund policy.</p>
       </div>
     </section>
      </>
