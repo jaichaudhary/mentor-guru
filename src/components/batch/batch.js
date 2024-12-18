@@ -13,7 +13,7 @@ export default function Batch() {
         title: "Prelims Kaushal",
         features: [
           "👥 Complete supervision by Dipendra Adhikari sir",
-          "⭐ Continuous one-on-one mentoring by interview appeared EXPERIENCED mentors",
+          "⭐ Continuous 1-1 mentorship by interview appeared experianced mentors.",
           "∞ Five revisions before prelims",
         ],
         image: "prelims.svg",
@@ -27,24 +27,24 @@ export default function Batch() {
         title: "Moksha Plus",
         features: [
           "👥 Regular group sessions by Dipendra Adhikari sir",
-          "⭐ Continuous one-on-one mentoring by interview appeared EXPERIENCED mentors",
+          "⭐ Continuous 1-1 mentorship by interview appeared experianced mentors.",
           "∞ Comprehensive coverage of major + minor subjects in a time-bound manner",
         ],
         image: "moksha-plus.jpg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1bjMtbpk2RCEj0jzN1pXYfMre4Z-KML98/view?usp=sharing",
+        brochureLink: "https://drive.google.com/file/d/1_I5Q_BMM-8_JzDhncsYIRISmi-srA89Y/view?usp=sharing",
       },
       {
         guidance: "✨ Customized Support",
         title: "Moksha",
         features: [
           "👥 Regular group sessions by Dipendra Adhikari sir",
-          "⭐ Continuous one-on-one mentoring by interview appeared EXPERIENCED mentors",
+          "⭐ Continuous 1-1 mentorship by interview appeared experianced mentors.",
           "∞ Comprehensive coverage of major subjects in a time-bound manner",
         ],
         image: "Metorship4.svg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1bjMtbpk2RCEj0jzN1pXYfMre4Z-KML98/view?usp=sharing",
+        brochureLink: "https://drive.google.com/file/d/1_I5Q_BMM-8_JzDhncsYIRISmi-srA89Y/view?usp=sharing",
       },
       
     ],

@@ -32,7 +32,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://www.instagram.com/mentorguru.in/"
+              href="https://www.facebook.com/mentorguru.in"
               target="_blank"
               rel="noopener noreferrer"
               className="footer__link"
@@ -53,6 +53,30 @@ const Footer = () => {
                 style={{ height: 30, width: 30 }}
                 src="img/youtube.png"
                 alt="Youtube"
+              />
+            </a>
+            <a
+              href="https://t.me/+9AibgMTEC8I3YzBl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+            >
+              <img
+                style={{ height: 30, width: 30 }}
+                src="img/telegram.png"
+                alt="Telegram"
+              />
+            </a>
+            <a
+              href="https://x.com/mentor_guruDA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer__link"
+            >
+              <img
+                style={{ height: 30, width: 30 }}
+                src="img/twitter.png"
+                alt="X.com"
               />
             </a>
           </div>
@@ -78,7 +102,7 @@ const Footer = () => {
             <li>
               Address:{" "}
               <a href="" className="footer__link">
-                Sector 44, Near Botanical Garden Meteo Station, Noida Pin code 201303
+                Sector 44, Near Botanical Garden Metro Station, Noida Pin code 201303
               </a>
             </li>
           </ul>
@@ -96,7 +120,14 @@ const Footer = () => {
         <Link to="/terms-and-conditions" className="footer__link">
           Terms and Conditions
         </Link>
+        <div className="footer__divider">
+          |
+        </div>
+        <Link to="/refund-policy" className="footer__link">
+          Refund Policy
+        </Link>
       </div>
+      
     </footer>
   );
 };

@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./PrivacyPolicy.css";
 
 const PrivacyPolicy = () => {
+  // Scroll to top on component mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <section className="privacy-policy">
       <div className="privacy-container">

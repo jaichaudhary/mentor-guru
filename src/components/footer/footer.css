@@ -1,3 +1,4 @@
+/* Footer Styles */
 .footer {
   background-color: #f8f8f8;
   color: #333;
@@ -5,6 +6,7 @@
   text-align: center;
 }
 
+/* Footer Content */
 .footer__content {
   display: flex;
   flex-wrap: wrap;
@@ -40,21 +42,21 @@
 }
 
 .footer__list li {
-  display: flex; /* Use flexbox for horizontal alignment */
-  align-items: center; /* Vertically center items */
-  gap: 8px; /* Add spacing between the icon and text */
-  margin-bottom: 8px; /* Keep the existing margin */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
 }
 
 .footer__link {
   text-decoration: none;
-  color: #007bff; /* Blue link color for consistency */
+  color: #007bff;
   font-size: 0.9rem;
 }
 
 .footer__link:hover {
   text-decoration: underline;
-  color: #0056b3; /* Darker shade on hover */
+  color: #0056b3;
 }
 
 .footer__icons {
@@ -62,12 +64,8 @@
   gap: 10px;
 }
 
-.nav__call-icon {
-  font-size: 1.2rem; /* Adjust icon size if necessary */
-  color: #007bff; /* Match the link color */
-}
-
 .nav__call-icons {
+  font-size: 1.2rem;
   color: #007bff;
 }
 
@@ -90,12 +88,12 @@
 
 .footer__policy-link {
   text-decoration: none;
-  color: #333; /* Match footer text color */
+  color: #333;
   font-size: 0.9rem;
 }
 
 .footer__policy-link:hover {
-  color: #007bff; /* Highlight color on hover */
+  color: #007bff;
   text-decoration: underline;
 }
 
@@ -106,11 +104,15 @@
   align-items: center;
   gap: 10px;
   flex-direction: row;
-  
 }
 
 .footer__divider {
-  
   color: #007bff;
-  
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .footer {
+    padding: 100px 20px; /* Ensure margin is applied for mobile view */
+  }
 }
