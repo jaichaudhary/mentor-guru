@@ -1,0 +1,159 @@
+/*==================== NAV ====================*/
+.header {
+  width: 100%;
+  position: fixed;
+  top: 40px; /* Push down the Navbar below the TopStrip */
+  z-index: 999; /* Ensure Navbar stays below TopStrip */
+  background-color: var(--nav-back-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px !important;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav__logo {
+  color: var(--nav-color);
+  font-weight: var(--font-medium);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.nav__img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.nav__login {
+  color: #fff;
+  font-weight: var(--font-medium);
+  background-color: #007bff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.nav__call-icon {
+  font-size: 1.2rem;
+  color: #fff !important;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Spacing between menu items */
+}
+
+.nav__link {
+  color: var(--nav-color);
+  font-weight: var(--font-medium);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+.nav__popup {
+  position: absolute;
+  bottom: 60px;  /* Position above the navbar */
+  right: 20px;
+  background-color: var(--nav-back-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 2px solid #007bff;  /* Blue border */
+  border-radius: 8px;  /* Rounded corners */
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.nav__menu--popup a {
+  padding: 12px 0;
+  color: var(--nav-color);
+  text-decoration: none;
+}
+
+.nav__menu--popup a:hover {
+  color: #007bff;
+}
+
+.nav__hamburger {
+  position: relative;  /* For alignment with the popup */
+  z-index: 1100;
+}
+
+
+/* Mobile-specific styles */
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed; /* Fix the navbar to the bottom for mobile */
+    bottom: 0;
+    top: initial; /* Remove top positioning */
+    z-index: 1000; /* Ensure it stays above content */
+    padding: 10px 15px;
+    background-color: var(--nav-back-color);
+  }
+
+  .nav__logo {
+    font-size: 0.8rem;
+  }
+
+  .nav__img {
+    height: 30px; /* Adjust logo size for mobile */
+    margin-right: 5px;
+  }
+
+  .nav__login {
+    font-size: 0.8rem; /* Adjust button text size */
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav__link {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    top: 40px; /* Push Navbar below TopStrip */
+    bottom: initial;
+    flex-direction: row; /* Ensure items align horizontally in desktop */
+    padding: 10px 20px;
+  }
+
+  .nav__logo {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__login {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+    justify-content: center;
+  }
+
+  .nav__btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

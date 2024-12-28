@@ -1,0 +1,49 @@
+/*==================== TOP STRIP ====================*/
+.topstrip {
+    width: 100%;
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    z-index: 1000; /* High priority for stacking */
+    background-color: #ffcc00; /* Highlight color */
+    color: #000; /* Text color */
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Add space between text and button */
+  }
+  
+  .topstrip__button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Ensure button-like appearance */
+  }
+  
+  .topstrip__button:hover {
+    background-color: #0056b3;
+    color: #fff; /* Darker blue on hover */
+  }
+  
+
+  @media (max-width: 768px) {
+    .topstrip {
+      font-size: 0.7rem; /* Smaller font size for mobile */
+      padding: 8px 5px; /* Adjust padding for better fit */
+    }
+  
+    .topstrip__button {
+      font-size: 0.8rem; /* Smaller button font size for mobile */
+      padding: 4px 8px; /* Adjust button padding for mobile */
+    }
+  }
