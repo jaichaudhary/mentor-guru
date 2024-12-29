@@ -1,0 +1,121 @@
+.combo-course-container {
+    text-align: center;
+    padding: 80px 10%;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+  }
+  
+  .combo-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .combo-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .enroll-btn {
+    background-color: #ff6a00;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 50px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .enroll-btn:hover {
+    background-color: #e65c00;
+  }
+  
+  .combo-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .course-box {
+    border: 2px solid #ff6a00;
+    padding: 40px;
+    width: 450px;
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  
+  .course-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff6a00;
+  }
+  
+  .course-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 2;
+    color: #333;
+    flex-grow: 1;
+  }
+  
+  .plus-sign {
+    font-size: 3rem;
+    color: #ff6a00;
+    align-self: center;
+    margin: 0 20px;
+  }
+  
+  .price-container {
+    display: flex;
+    justify-content:first baseline;
+    align-items: baseline;
+    margin-top: 30px;
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff6a00;
+  }
+  
+  .tax {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .combo-grid {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .course-box {
+      width: 100%;
+      padding: 30px;
+    }
+  
+    .plus-sign {
+      display: none;
+    }
+  
+    .enroll-btn {
+      width: 100%;
+      font-size: 1.1rem;
+    }
+  }
+  

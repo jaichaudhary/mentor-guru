@@ -4,6 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { db } from '../firebase/firebaseConfig';
 import { ref, push } from "firebase/database"; 
 import CsatFaq from '../faq/CsatFaq';
+import ComboCourse from '../combo/ComboCourse';
 
 
 function Csat2025() {
@@ -127,7 +128,7 @@ function Csat2025() {
       </div>
 
       {/* Mentorship Section */}
-      <div className="mentorship-section">
+      {/* <div className="mentorship-section">
         <div className="mentorship-content">
           <div className="mentorship-info">
             <h2>COMBO <span className="highlight-text">COURSE</span></h2>
@@ -140,14 +141,11 @@ function Csat2025() {
 </button>
           </div>
 
-          {/* <div className="mentorship-image">
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Mentorship Illustration"
-            />
-          </div> */}
+          
         </div>
-      </div>
+      </div> */}
+
+      <ComboCourse />
 
 
       {/* Still In Doubt Section */}
