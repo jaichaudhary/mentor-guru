@@ -51,7 +51,7 @@ function Csat2025() {
       <div className="content-section">
         <div className="info-section">
           <p className="csat-description">
-            The best course for CSAT 2025 with comprehensive coverage of all tropics, with through understanding supported by practice test, handouts, PYQ analysis, test series and mentorship.
+            The best course for CSAT 2025 with comprehensive coverage of all topics, with thorough understanding supported by practice test, handouts, PYQ analysis, test series and mentorship.
           </p>
           <div className="pricing">
             <span className="price">₹ 1999</span> <span className="tax">+taxes</span>

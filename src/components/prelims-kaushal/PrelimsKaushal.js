@@ -3,7 +3,7 @@ import './PrelimsKaushal.css'
 
 const PrelimsKaushal = () => {
   return (
-    <div className='heading'>This page us not available right now!</div>
+    <div className='heading'>This page is not available right now!</div>
   )
 }
 
