@@ -19,7 +19,7 @@ function ComboCourse() {
             <li>Academic doubt resolving mentorship</li>
           </ul>
           <div className="price-container">
-            <div className="price">₹ 2999</div>
+            <div className="price">₹ 3999</div>
             <div className="tax">+ 18% taxes</div>
           </div>
         </div>
