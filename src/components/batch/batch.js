@@ -18,7 +18,7 @@ export default function Batch() {
         ],
         image: "prelims.svg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1GRjNyNXFtANIGbhsuVMgmr0gLvDSRAcL/view?usp=sharing",
+        brochureLink: "https://drive.google.com/file/d/1aZeAfLY6C-lO2saAyLs0wlDTyDU_t9Lr/view?usp=sharing",
       },
     ],
     Mains: [
@@ -32,7 +32,7 @@ export default function Batch() {
         ],
         image: "moksha-plus.jpg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1_I5Q_BMM-8_JzDhncsYIRISmi-srA89Y/view?usp=sharing",
+        brochureLink: "https://drive.google.com/file/d/1qM6OTBkUasP8NNoYlCBjq-6hrGPTDigD/view?usp=sharing",
       },
       {
         guidance: "✨ Customized Support",
@@ -44,7 +44,7 @@ export default function Batch() {
         ],
         image: "Metorship4.svg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1_I5Q_BMM-8_JzDhncsYIRISmi-srA89Y/view?usp=sharing",
+        brochureLink: "https://drive.google.com/file/d/1qM6OTBkUasP8NNoYlCBjq-6hrGPTDigD/view?usp=sharing",
       },
       
     ],
@@ -59,7 +59,7 @@ export default function Batch() {
         ],
         image: "Mains-warriors.jpg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1loCnT2MRZ-KnCz_wI0Io2ctOTxXsXQF2/view?usp=sharing",
+        brochureLink: "https://drive.google.com/file/d/1jvJxnopNxBhXeQMxybad3Lax7_kexTWF/view?usp=sharing",
       },
       {
         guidance: "✨ Customized Support",
@@ -71,7 +71,7 @@ export default function Batch() {
         ],
         image: "Answer2.svg",
         buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1sqqGaEIg-3UDj75d1Vx24fQQLt4CJhkj/view?usp=sharing",
+        brochureLink: "https://drive.google.com/file/d/1GQetXLYGVJyBHf_rL_m1WzaFi6LXel-w/view?usp=sharing",
       },
     ],
   };

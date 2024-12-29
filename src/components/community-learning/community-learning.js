@@ -1,9 +1,11 @@
 import React from "react";
 import "./community-learning.css";
+import FAQ from "../faq/faq";
 
 const CommunityAndLearning = () => {
   return (
-    <div className="section-container">
+    <>
+     <div className="section-container">
       {/* Top Section: Community */}
       <div className="community-section">
         <div className="community-icons">
@@ -49,6 +51,10 @@ const CommunityAndLearning = () => {
         </div>
       </div>
     </div>
+
+    <FAQ />
+    </>
+   
   );
 };
 

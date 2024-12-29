@@ -12,6 +12,8 @@ import TermsAndConditions from "./components/policy/TermsAndConditions";
 import TopStrip from "./components/topstrip/TopStrip";
 import FAQ from "./components/faq/faq";
 import Refund from "./components/policy/Refund";
+import Csat2025 from "./components/Csat2025/Csat2025";
+import PrelimsKaushal from "./components/prelims-kaushal/PrelimsKaushal";
 
 function App() {
   return (
@@ -30,11 +32,13 @@ function App() {
               </>
             }
           />
+          {/* CSAT-2025 page route */}
+          <Route path="/csat-2025" element={<Csat2025 />} />
+          <Route path="/prelims-kaushal" element={<PrelimsKaushal />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/refund-policy" element={<Refund />} />
         </Routes>
-        <FAQ />
         <Footer />
       </div>
     </Router>
