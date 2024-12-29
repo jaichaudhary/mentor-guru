@@ -1,0 +1,722 @@
+/* Header design */
+
+.csat-container {
+  text-align: center;
+  padding: 60px 10%;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+.csat-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 10vh;
+  color: #ff6a00;
+}
+
+.highlight-line {
+  height: 5px;
+  width: 180px;
+  background-color: #ff6a00;
+  margin: 15px auto 30px;
+  border-radius: 10px;
+}
+
+.batch-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.info-section {
+  text-align: left;
+  max-width: 60%;
+}
+
+.csat-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.pricing .price {
+  font-size: 3rem !important;
+  color: #ff6a00;
+  font-weight: bolder;
+}
+
+.pricing .tax {
+  font-size: 1.5rem !important;
+  color: black;
+  
+}
+
+.start-date {
+  font-size: 1.5rem;
+  margin: 10px 0 30px;
+}
+
+.orange-text {
+  color: #ff6a00;
+  font-weight: bold;
+  font-size: 1.7rem !important;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.schedule-button {
+  background-color: white;
+  border: 2px solid #ff6a00;
+  padding: 10px 25px;  /* Balanced padding for height consistency */
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;  /* Flex to align text and icon */
+  align-items: center;
+  justify-content: center;
+  gap: 8px;  /* Space between text and icon */
+  color: #ff6a00;
+  transition: all 0.3s ease;
+}
+
+/* Material Icon Alignment */
+.schedule-button .material-icons {
+  font-size: 1.3rem;  /* Adjust icon size */
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;  /* Align icon with text */
+  margin-bottom: -2px;  /* Subtle adjustment to align perfectly with text */
+  color: #ff6a00;  /* Icon color same as text */
+}
+
+/* Hover Effect */
+.schedule-button:hover {
+  background-color: #ff6a00;
+  color: white;
+}
+
+.schedule-button:hover .material-icons {
+  color: white;
+}
+
+.enroll-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mentor-section {
+  text-align: center;
+  margin-top: 0;
+}
+
+.mentor-image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.mentor-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.mentor-role {
+  color: #777;
+  font-size: 1rem;
+  color: #ff6a00;
+  font-weight: bold;
+}
+
+.mentor-skill {
+  background-color: #ff6a00;
+  padding: 10px 10px;
+  color: black;
+  font-weight: bold;
+}
+
+
+.mentorship-section {
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentorship-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaf4ff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 80%;
+  max-width: 1100px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.mentorship-info h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.highlight-text {
+  color: #f59e0b;
+  font-size: 3rem !important;
+  font-weight: 800;
+}
+
+.mentorship-info p {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: black;
+  font-weight: 600;
+}
+
+.mentorship-button {
+  background-color: #f59e0b;
+  color: white;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.mentorship-button:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+/* Focus effect */
+.phone-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+.phone-input::placeholder {
+  color: #a1a1a1;
+  font-style: italic;
+}
+
+.mentorship-button {
+  background-color: #f59e0b;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.mentorship-button:hover {
+  background-color: #d97706;
+}
+
+.mentorship-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Features Section */
+.features-section {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.features-title {
+  font-size: 2.8rem;
+  font-weight:800;
+  margin-bottom: 70px;
+  color: black;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background-color: white;
+  border: 2px solid #ff6a00;
+  border-radius: 12px;
+  padding: 5px 20px 40px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-header {
+  position: absolute;
+  top: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2563eb;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.feature-icon i {
+  font-size: 4rem;
+  margin: 30px 0 20px;
+  color: #ff6a00;
+}
+
+
+
+.feature-description {
+  font-size: 1rem;
+  color: black;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/* Still In Doubt Section */
+.doubt-section {
+  background-color: #eaf4ff;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.doubt-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.doubt-text {
+  flex: 1;
+}
+
+.doubt-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.doubt-text p {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.phone-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.phone-icon, .whatsapp-icon {
+  font-size: 1.6rem;
+  margin-right: 10px;
+}
+
+.whatsapp-icon img {
+  vertical-align: middle;
+}
+
+.whatsapp-logo {
+  width: 40px;  /* Adjust to desired size */
+  height: 40px; /* Maintain aspect ratio */
+  vertical-align: middle;
+}
+
+.phone-number {
+  font-weight: bold;
+}
+
+/* Form Card */
+.form-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.form-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-subtext {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-row {
+  display: flex;
+  gap: 15px;
+}
+
+.input-row input,
+.input-group input,
+select {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover and Focus States */
+.input-row input:focus,
+.input-group input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.input-group select {
+  border: none;
+  padding: 16px;
+  background-color: #f3f3f3;
+  font-size: 1rem;
+}
+
+.input-group input {
+  border: none;
+  padding: 16px;
+  font-size: 1rem;
+}
+
+.submit-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #1e40af;
+}
+
+.form-terms {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.form-terms a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+  .content-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-section {
+    max-width: 100%;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .mentor-section {
+    margin-top: 40px;
+  }
+
+  .mentorship-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mentorship-info {
+    padding: 40px;
+  }
+
+  .mentorship-button {
+    width: 90%;
+  }
+
+  .input-section {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .country-code, .phone-input {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .doubt-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doubt-text {
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .form-card {
+    max-width: 100%;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 767px) {
+  .csat-title {
+    font-size: 1.8rem;
+    margin-top: 1vh;
+  }
+
+  .highlight-line {
+    width: 120px;
+  }
+
+  .batch-button {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .csat-description {
+    font-size: 1rem;
+  }
+
+  .pricing {
+    font-size: 2rem;
+  }
+
+  .start-date {
+    font-size: 0.9rem;
+  }
+
+  .orange-text {
+    font-size: 1rem !important;
+  }
+
+  .cta-buttons button a {
+    font-size: 0.9rem;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .enroll-button {
+    padding: 15px 20px;
+  }
+
+  .mentor-section {
+    margin-top: 5px;
+  }
+
+  .mentor-image {
+    width: 250px;
+  }
+
+  .input-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .country-code {
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    height: 48px;
+  }
+
+  .phone-input {
+    width: 100%;
+    border-radius: 8px;
+    height: 48px;
+  }
+
+  .features-section {
+    text-align: center;
+    margin: 50px 0;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-header {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+
+  .mentorship-section {
+    margin: 50px 0;
+  }
+
+  .mentorship-content {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .mentorship-info h2 {
+    font-size: 2.5rem;
+    line-height: 5vh;
+  }
+
+  .highlight-text {
+    font-size: 2.5rem !important;
+  }
+
+  .mentorship-info p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .mentorship-button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+
+  /* Still In Doubt Section */
+.doubt-section {
+  background-color: #eaf4ff;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.phone-icon {
+  font-size: 1rem !important;
+  margin-right: 10px;
+}
+
+.phone-number {
+  font-weight: bold;
+  font-size: 1.5rem !important;
+}
+
+.whatsapp-logo {
+  width: 20px;  /* Adjust to desired size */
+  height: 20px; /* Maintain aspect ratio */
+  vertical-align: middle;
+}
+
+  .input-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .doubt-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .form-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: auto;
+    max-width: 1000px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .doubt-text h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .doubt-text p {
+    font-size: 0.8rem;
+    color: black;
+    margin-bottom: 5px;
+  }
+}
