@@ -9,33 +9,46 @@ import ComboCourse from '../combo/ComboCourse';
 
 function Csat2025() {
 
-  const [formData, setFormData] = useState({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      course: ''
-    });
+ const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    course: ''
+  });
+
+const [startDate, setStartDate] = useState("2nd January 2025");
+const [brochureLink, setBrochureLink] = useState("https://drive.google.com/file/d/1XgZl4prdXZjqV_jZPSZ0lqSnI2YtuYej/view?usp=sharing");
+
+const handleChange = (e) => {
+  setFormData({ 
+    ...formData, 
+    [e.target.name]: e.target.value 
+  });
+};
+
+const handleBatchChange = (batch) => {
+  if(batch === 1) {
+    setStartDate("2nd January 2025");
+    setBrochureLink("https://drive.google.com/file/d/1XgZl4prdXZjqV_jZPSZ0lqSnI2YtuYej/view?usp=sharing");
+  } else if(batch === 2) {
+    setStartDate("21 January 2025");
+    setBrochureLink("https://drive.google.com/file/d/1MDtRBTVwzC7_2eyXGf1fHPJLKWr-wMEw/view?usp=sharing");  // Batch 2 Brochure
+  }
+};
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
   
-    const handleChange = (e) => {
-      setFormData({ 
-        ...formData, 
-        [e.target.name]: e.target.value 
-      });
-    };
-  
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      
-      try {
-        const docRef = await push(ref(db, "enrollments"), formData);  // Push to Realtime DB
-        alert("Enrollment Successful! Reference ID: " + docRef.key);  // Use key for ID
-        setFormData({ firstName: '', lastName: '', email: '', phone: '', course: '' });
-      } catch (error) {
-        console.error("Error adding document: ", error);
-        alert("Failed to submit. Please try again.");
-      }
-    };
+  try {
+    const docRef = await push(ref(db, "enrollments"), formData);
+    alert("Enrollment Successful! Reference ID: " + docRef.key);
+    setFormData({ firstName: '', lastName: '', email: '', phone: '', course: '' });
+  } catch (error) {
+    console.error("Error adding document: ", error);
+    alert("Failed to submit. Please try again.");
+  }
+};
 
 
   return (
@@ -46,7 +59,8 @@ function Csat2025() {
         CSAT COURSE 2025
       </h1>
       <div className="highlight-line"></div>
-      <button className="batch-button">Batch 1</button>
+      <button className="batch-button" onClick={() => handleBatchChange(1)}>Batch 1</button>
+        <button className="batch-button" onClick={() => handleBatchChange(2)}>Batch 2</button>
 
       <div className="content-section">
         <div className="info-section">
@@ -57,12 +71,12 @@ function Csat2025() {
             <span className="price">₹ 1999</span> <span className="tax">+taxes</span>
           </div>
           <p className="start-date">
-            📅 <span className="orange-text">Starting from 2nd January 2025</span>
-          </p>
+              📅 <span className="orange-text">Starting from {startDate}</span>
+            </p>
           <div className="cta-buttons">
-          <a href="https://drive.google.com/file/d/1XgZl4prdXZjqV_jZPSZ0lqSnI2YtuYej/view?usp=sharing" target="_blank" className="schedule-button">
-  Brochure <span className="external-icon material-icons">description</span>
-</a>
+          <a href={brochureLink} target="_blank" className="schedule-button">
+                Brochure <span className="external-icon material-icons">description</span>
+              </a>
 
 
 <button 
@@ -114,7 +128,7 @@ function Csat2025() {
       },
       {
         title: "Mentorship",
-        description: "Mentorship sessions shall be conducted on regular basis",
+        description: "Mentorship sessions will be conducted on regular basis",
         icon: <i className="fas fa-chalkboard-teacher"></i>  // Teacher icon for mentorship
       }
     ].map((feature, index) => (
@@ -224,6 +238,7 @@ function Csat2025() {
                   <option value="test-series">MOKSHA PLUS</option>
                   <option value="test-series">SAMARTH</option>
                   <option value="test-series">MAINS WARRIOR</option>
+                  <option value="test-series">COMBO COURSE</option>
                 </select>
               </div>
 
