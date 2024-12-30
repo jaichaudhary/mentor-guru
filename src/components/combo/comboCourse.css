@@ -1,121 +1,152 @@
+/* CSS (comboCourse.css) */
 .combo-course-container {
-    text-align: center;
-    padding: 80px 10%;
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-  }
-  
-  .combo-title {
-    font-size: 2.8rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .combo-subtitle {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-    color: #555;
-  }
-  
-  .enroll-btn {
-    background-color: #ff6a00;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.3rem;
-    cursor: pointer;
-    margin-bottom: 50px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .enroll-btn:hover {
-    background-color: #e65c00;
-  }
-  
+  text-align: center;
+  padding: 60px 5%;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+}
+
+.combo-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.combo-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.enroll-btn {
+  background-color: #ff6a00;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 60px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #e65c00;
+}
+
+.combo-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.course-box {
+  border: 2px solid #ff6a00;
+  padding: 40px;
+  width: 450px;
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  height: auto;
+}
+
+.combo-grid > .course-box {
+  display: flex;
+  flex: 1;
+  max-width: 450px;
+}
+
+.course-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ff6a00;
+}
+
+.course-list {
+  list-style-type: decimal;
+  padding-left: 20px;
+  font-size: 1.1rem;
+  line-height: 2;
+  color: #333;
+  flex-grow: 1;
+}
+
+.plus-sign {
+  font-size: 3rem;
+  color: #ff6a00;
+  align-self: center;
+  margin: 0 20px;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 30px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff6a00;
+}
+
+.tax {
+  font-size: 1rem;
+  color: #888;
+}
+
+.buy-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
   .combo-grid {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 50px;
-    margin-top: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .course-box {
-    border: 2px solid #ff6a00;
-    padding: 40px;
-    width: 450px;
-    text-align: left;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
+    align-items: center;
   }
-  
-  .course-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #ff6a00;
+
+  .course-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    margin: 0 auto;
+  }
+
+  .plus-sign {
+    display: none;
+  }
+
+  .enroll-btn, .buy-btn {
+    width: 100%;
+    font-size: 1.1rem;
   }
   
   .course-list {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.1rem;
-    line-height: 2;
-    color: #333;
-    flex-grow: 1;
+    font-size: 0.9rem;
   }
-  
-  .plus-sign {
-    font-size: 3rem;
-    color: #ff6a00;
-    align-self: center;
-    margin: 0 20px;
-  }
-  
-  .price-container {
-    display: flex;
-    justify-content:first baseline;
-    align-items: baseline;
-    margin-top: 30px;
-  }
-  
-  .price {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #ff6a00;
-  }
-  
-  .tax {
-    font-size: 1rem;
-    color: #888;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .combo-grid {
-      flex-direction: column;
-      gap: 30px;
-    }
-  
-    .course-box {
-      width: 100%;
-      padding: 30px;
-    }
-  
-    .plus-sign {
-      display: none;
-    }
-  
-    .enroll-btn {
-      width: 100%;
-      font-size: 1.1rem;
-    }
-  }
-  
+
+}

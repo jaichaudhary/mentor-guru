@@ -41,6 +41,17 @@ function Navbar() {
         </nav>
       )}
 
+      {/* Call Back Button */}
+      <a
+        href="https://forms.gle/8vxgZsn1G9ijvW3z8"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="nav__login"
+      >
+        <UilPhone className="nav__call-icon" />
+        Get a Call Back
+      </a>
+
       {/* Hamburger Menu for Mobile */}
       {isMobile && (
         <div className="nav__hamburger" onClick={toggleMenu}>
@@ -61,17 +72,6 @@ function Navbar() {
           </nav>
         </div>
       )}
-
-      {/* Call Back Button */}
-      <a
-        href="https://forms.gle/8vxgZsn1G9ijvW3z8"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="nav__login"
-      >
-        <UilPhone className="nav__call-icon" />
-        Get a Call Back
-      </a>
     </header>
   );
 }
