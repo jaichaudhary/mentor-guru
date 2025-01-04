@@ -6,7 +6,7 @@ function ComboCourse() {
     <div className="combo-course-container">
       <h2 className="combo-title">COMBO COURSE</h2>
       <p className="combo-subtitle">Prelims Kaushal + CSAT Course 2025</p>
-      <a href="https://razorpay.me/@mentorguru?amount=1dWOigOTbkIj7L%2BG4LNf0A%3D%3D" className="enroll-btn">Enroll Now</a>
+      <a href="https://hbzxwj.courses.store/615608" className="enroll-btn">Enroll Now</a>
 
       <div className="combo-grid">
         <div className="course-box">
@@ -22,7 +22,7 @@ function ComboCourse() {
             <div className="price">₹ 3999</div>
             <div className="tax">+ 18% taxes</div>
           </div>
-          <button className="buy-btn" onClick={() => window.location.href='https://razorpay.me/@mentorguru?amount=VIfiyTmvf9XbX609NKPn4w%3D%3D'}>Buy Course</button>
+          <button className="buy-btn" onClick={() => window.location.href='https://hbzxwj.courses.store/614904'}>Buy Course</button>
         </div>
 
         <div className="course-box">
@@ -38,7 +38,7 @@ function ComboCourse() {
             <div className="price">₹ 1999</div>
             <div className="tax">+ 18% taxes</div>
           </div>
-          <button className="buy-btn" onClick={() => window.location.href='https://razorpay.me/@mentorguru?amount=nmRXZlFEe67Qhp%2F%2BZVSocw%3D%3D'}>Buy Course</button>
+          <button className="buy-btn" onClick={() => window.location.href='https://hbzxwj.courses.store/614936'}>Buy Course</button>
         </div>
       </div>
     </div>

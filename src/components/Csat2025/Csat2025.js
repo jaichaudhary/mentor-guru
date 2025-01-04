@@ -17,8 +17,9 @@ function Csat2025() {
     course: ''
   });
 
-const [startDate, setStartDate] = useState("2nd January 2025");
-const [brochureLink, setBrochureLink] = useState("https://drive.google.com/file/d/1XgZl4prdXZjqV_jZPSZ0lqSnI2YtuYej/view?usp=sharing");
+  const [startDate, setStartDate] = useState("2nd January 2025");
+  const [brochureLink, setBrochureLink] = useState("https://drive.google.com/file/d/1XgZl4prdXZjqV_jZPSZ0lqSnI2YtuYej/view?usp=sharing");
+  const [enrollLink, setEnrollLink] = useState("https://hbzxwj.courses.store/614936");
 
 const handleChange = (e) => {
   setFormData({ 
@@ -30,10 +31,12 @@ const handleChange = (e) => {
 const handleBatchChange = (batch) => {
   if(batch === 1) {
     setStartDate("2nd January 2025");
-    setBrochureLink("https://drive.google.com/file/d/1XgZl4prdXZjqV_jZPSZ0lqSnI2YtuYej/view?usp=sharing");
+    setBrochureLink("https://drive.google.com/file/d/1YBvWh4wTRUkydtuTFFjv8-pDF735NoDB/view?usp=sharing");
+    setEnrollLink("https://hbzxwj.courses.store/614936");  // Batch 1 Link
   } else if(batch === 2) {
     setStartDate("21 January 2025");
-    setBrochureLink("https://drive.google.com/file/d/1MDtRBTVwzC7_2eyXGf1fHPJLKWr-wMEw/view?usp=sharing");  // Batch 2 Brochure
+    setBrochureLink("https://drive.google.com/file/d/1Cx01UjP3F5rp3d6h0AT9gngeTrCsAqcJ/view?usp=sharing");
+    setEnrollLink("https://hbzxwj.courses.store/615762");  // Batch 2 Link
   }
 };
 
@@ -79,9 +82,9 @@ const handleSubmit = async (e) => {
               </a>
 
 
-<button 
+              <button 
   className="enroll-button"
-  onClick={() => window.location.href='https://razorpay.me/@mentorguru?amount=nmRXZlFEe67Qhp%2F%2BZVSocw%3D%3D'}
+  onClick={() => window.location.href = enrollLink}
 >
   Enroll Now ⚡
 </button>
@@ -225,21 +228,21 @@ const handleSubmit = async (e) => {
               </div>
 
               <div className="input-group">
-                <select 
-                  name="course" 
-                  value={formData.course} 
-                  onChange={handleChange} 
-                  required
-                >
-                  <option value="" disabled>Select your course</option>
-                  <option value="csat">CSAT COURSE 2025</option>
-                  <option value="mentorship">PRELIMS KAUSHAL</option>
-                  <option value="test-series">MOKSHA</option>
-                  <option value="test-series">MOKSHA PLUS</option>
-                  <option value="test-series">SAMARTH</option>
-                  <option value="test-series">MAINS WARRIOR</option>
-                  <option value="test-series">COMBO COURSE</option>
-                </select>
+              <select 
+  name="course" 
+  value={formData.course} 
+  onChange={handleChange} 
+  required
+>
+  <option value="" disabled>Select your course</option>
+  <option value="csat-2025">CSAT COURSE 2025</option>
+  <option value="prelims-kaushal">PRELIMS KAUSHAL</option>
+  <option value="moksha">MOKSHA</option>
+  <option value="moksha-plus">MOKSHA PLUS</option>
+  <option value="samarth">SAMARTH</option>
+  <option value="mains-warrior">MAINS WARRIOR</option>
+  <option value="combo-course">COMBO COURSE</option>
+</select>
               </div>
 
               <button type="submit" className="submit-button">Submit</button>

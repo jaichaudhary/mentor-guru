@@ -5,7 +5,19 @@ import "./batch.css";
 export default function Batch() {
   const [activeBatch, setActiveBatch] = useState("All");
 
-  // Define the programs for each batch with their content and images
+  const comboCourse = {
+    guidance: "✨ Comprehensive Preparation",
+    title: "Combo Course (Prelims + CSAT)",
+    features: [
+      "👥 Holistic coverage of the syllabus with customized individual plan in 4 Months",
+      "⭐ One Stop Solution for your Prelims GS paper I & II (CSAT)",
+      "∞ Analysis of PYQs and identify patterns/themes for each subject",
+    ],
+    image: "combo.jpg",
+    buyLink: "https://hbzxwj.courses.store/615608",
+    
+  };
+
   const batchPrograms = {
     Prelims: [
       {
@@ -17,8 +29,20 @@ export default function Batch() {
           "∞ Five revisions before prelims",
         ],
         image: "prelims.svg",
-        buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1aZeAfLY6C-lO2saAyLs0wlDTyDU_t9Lr/view?usp=sharing",
+        buyLink: "https://hbzxwj.courses.store/614904",
+        brochureLink: "https://drive.google.com/file/d/1OyFeqY8jiJaS3Maox6bjC_ZNNJ0Selz6/view?usp=sharing",
+      },
+      {
+        guidance: "✨ Customized Support",
+        title: "CSAT Course 2025-B1",
+        features: [
+          "🔴 Live complete coverage of CSAT syllabus",
+          "⭐ Coverage of last 10 years of PYQs",
+          "∞ Handouts and practice sheets after every class",
+        ],
+        image: "CSAT-COURSE-2025.jpg",
+        buyLink: "https://hbzxwj.courses.store/614936",
+        brochureLink: "https://drive.google.com/file/d/1YBvWh4wTRUkydtuTFFjv8-pDF735NoDB/view?usp=sharing",
       },
     ],
     Mains: [
@@ -31,8 +55,8 @@ export default function Batch() {
           "∞ Comprehensive coverage of major + minor subjects in a time-bound manner",
         ],
         image: "moksha-plus.jpg",
-        buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1qM6OTBkUasP8NNoYlCBjq-6hrGPTDigD/view?usp=sharing",
+        buyLink: "https://hbzxwj.courses.store/614924",
+        brochureLink: "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
       },
       {
         guidance: "✨ Customized Support",
@@ -43,10 +67,9 @@ export default function Batch() {
           "∞ Comprehensive coverage of major subjects in a time-bound manner",
         ],
         image: "Metorship4.svg",
-        buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1qM6OTBkUasP8NNoYlCBjq-6hrGPTDigD/view?usp=sharing",
+        buyLink: "https://hbzxwj.courses.store/614913",
+        brochureLink: "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
       },
-      
     ],
     "Answer Writing": [
       {
@@ -58,8 +81,8 @@ export default function Batch() {
           "∞ Accountability, consistency, and discipline",
         ],
         image: "Mains-warriors.jpg",
-        buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1jvJxnopNxBhXeQMxybad3Lax7_kexTWF/view?usp=sharing",
+        buyLink: "https://hbzxwj.courses.store/614930",
+        brochureLink: "https://drive.google.com/file/d/1MDpzibbOHQlwhc20VqOLqkT12ILrvkwP/view?usp=sharing",
       },
       {
         guidance: "✨ Customized Support",
@@ -70,18 +93,19 @@ export default function Batch() {
           "∞ Affordable course to develop discipline and consistency",
         ],
         image: "Answer2.svg",
-        buyLink: "https://forms.gle/gK1a314sVHm6zAyK9",
-        brochureLink: "https://drive.google.com/file/d/1GQetXLYGVJyBHf_rL_m1WzaFi6LXel-w/view?usp=sharing",
+        buyLink: "https://hbzxwj.courses.store/614927",
+        brochureLink: "https://drive.google.com/file/d/1UiAowXicFqAkp2GQvz_p-PfBBSLjSSiT/view?usp=sharing",
       },
     ],
+    Combo: [comboCourse],
   };
 
-  // Combine all programs for the "All" tab
-  const allPrograms = Object.values(batchPrograms).flat();
+  const allPrograms = [
+    ...Object.values(batchPrograms).flat(),
+  ];
 
   return (
     <div className="batch">
-      {/* Batch Selector */}
       <section className="batch-details__header">
         <div className="batch-details__year-buttons">
           <button
@@ -116,20 +140,28 @@ export default function Batch() {
           >
             Answer Writing
           </button>
+          <button
+            className={`batch-details__year-button ${
+              activeBatch === "Combo" ? "active" : ""
+            }`}
+            onClick={() => setActiveBatch("Combo")}
+          >
+            Combo
+          </button>
         </div>
       </section>
 
-      {/* Render BatchDetails based on active batch */}
       <div className="batch__programs">
-        {(activeBatch === "All" ? allPrograms : batchPrograms[activeBatch]).map(
-          (program, index) => (
-            <BatchDetails
-              key={`${activeBatch}-${index}`}
-              activeBatch={activeBatch}
-              programDetails={program}
-            />
-          )
-        )}
+        {(activeBatch === "All"
+          ? [...Object.values(batchPrograms).flat().filter((item) => item.title !== comboCourse.title), comboCourse]
+          : batchPrograms[activeBatch]
+        ).map((program, index) => (
+          <BatchDetails
+            key={`${activeBatch}-${index}`}
+            activeBatch={activeBatch}
+            programDetails={program}
+          />
+        ))}
       </div>
     </div>
   );
