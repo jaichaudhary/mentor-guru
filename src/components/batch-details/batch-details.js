@@ -8,7 +8,7 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
       <div className="batch-details__card">
         <div className="batch-details__left">
           <img
-            src={programDetails?.image || "1-1_mentorship.png"} // Use the image from programDetails or fallback
+            src={programDetails?.image || "1-1_mentorship.png"} 
             alt={programDetails?.title || "1-1 Mentorship"}
             className="batch-details__image"
           />
@@ -48,8 +48,8 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
               </a>
             )}
 
-            {/* Brochure Button */}
-            {programDetails?.brochureLink ? (
+            {/* Conditional Rendering for Brochure Button */}
+            {programDetails?.brochureLink && (
               <a
                 href={programDetails.brochureLink}
                 target="_blank"
@@ -58,13 +58,6 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
               >
                 Brochure
               </a>
-            ) : (
-              <>
-                <button className="batch-details__learn-more">Learn More</button>
-                <button className="batch-details__view-timetable">
-                  View Timetable
-                </button>
-              </>
             )}
           </div>
         </div>

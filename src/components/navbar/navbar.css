@@ -42,6 +42,10 @@
   text-decoration: none;
 }
 
+.nav__login:hover {
+  color: #ff6a00;
+}
+
 .nav__call-icon {
   font-size: 1.2rem;
   color: #fff !important;
