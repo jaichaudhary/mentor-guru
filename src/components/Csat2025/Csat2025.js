@@ -5,6 +5,7 @@ import { db } from '../firebase/firebaseConfig';
 import { ref, push } from "firebase/database"; 
 import CsatFaq from '../faq/CsatFaq';
 import ComboCourse from '../combo/ComboCourse';
+import ContactForm from '../form/ContactForm';
 
 
 function Csat2025() {
@@ -144,29 +145,11 @@ const handleSubmit = async (e) => {
         </div>
       </div>
 
-      {/* Mentorship Section */}
-      {/* <div className="mentorship-section">
-        <div className="mentorship-content">
-          <div className="mentorship-info">
-            <h2>COMBO <span className="highlight-text">COURSE</span></h2>
-            <p>Prelims Kaushal + CSAT Course 2025</p>
-            <button 
-  className="mentorship-button"
-  onClick={() => window.location.href='https://razorpay.me/@mentorguru?amount=1dWOigOTbkIj7L%2BG4LNf0A%3D%3D'}
->
-  Enroll Now
-</button>
-          </div>
-
-          
-        </div>
-      </div> */}
-
       <ComboCourse />
 
 
       {/* Still In Doubt Section */}
-      <div className="doubt-section">
+      {/* <div className="doubt-section">
         <div className="doubt-content">
           <div className="doubt-text">
             <h2><strong>Have a doubt?</strong></h2>
@@ -176,7 +159,7 @@ const handleSubmit = async (e) => {
               <span className="whatsapp-icon">
     <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" width="20" className="whatsapp-logo" />
   </span>
-              <span className="phone-number">9205053891</span> {/* add whatsapp logo */}
+              <span className="phone-number">9205053891</span>
             </div>
           </div>
 
@@ -184,7 +167,7 @@ const handleSubmit = async (e) => {
             <h2 className="form-title">Get in Touch</h2>
             <p className="form-subtext">You can reach us anytime</p>
             
-            {/* Form with Realtime Database Submission */}
+            
             <form onSubmit={handleSubmit}>
               <div className="input-row">
                 <input 
@@ -249,7 +232,8 @@ const handleSubmit = async (e) => {
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
+      <ContactForm />
     </div>
 
     <CsatFaq />

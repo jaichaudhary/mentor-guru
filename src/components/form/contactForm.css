@@ -1,0 +1,248 @@
+/* Still In Doubt Section */
+.doubt-section {
+    background-color: #eaf4ff;
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .doubt-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .doubt-text {
+    flex: 1;
+  }
+  
+  .doubt-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .doubt-text p {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 25px;
+  }
+  
+  .phone-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .phone-icon, .whatsapp-icon {
+    font-size: 1.6rem;
+    margin-right: 10px;
+  }
+  
+  .whatsapp-icon img {
+    vertical-align: middle;
+  }
+  
+  .whatsapp-logo {
+    width: 40px;  /* Adjust to desired size */
+    height: 40px; /* Maintain aspect ratio */
+    vertical-align: middle;
+  }
+  
+  .phone-number {
+    font-weight: bold;
+  }
+  
+  /* Form Card */
+  .form-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .form-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .form-subtext {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .input-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .input-row input,
+  .input-group input,
+  select {
+    flex: 1;
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover and Focus States */
+  .input-row input:focus,
+  .input-group input:focus,
+  select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .input-group select {
+    border: none;
+    padding: 16px;
+    background-color: #f3f3f3;
+    font-size: 1rem;
+  }
+  
+  .input-group input {
+    border: none;
+    padding: 16px;
+    font-size: 1rem;
+  }
+  
+  .submit-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 18px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #1e40af;
+  }
+  
+  .form-terms {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .form-terms a {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+  
+    .doubt-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .doubt-text {
+      padding-right: 0;
+      margin-bottom: 40px;
+    }
+  
+    .form-card {
+      max-width: 100%;
+    }
+  }
+  
+  /* For Mobile Devices */
+  @media (max-width: 767px) {
+  
+    /* Still In Doubt Section */
+  .doubt-section {
+    background-color: #eaf4ff;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .phone-icon {
+    font-size: 1rem !important;
+    margin-right: 10px;
+  }
+  
+  .phone-number {
+    font-weight: bold;
+    font-size: 1.5rem !important;
+  }
+  
+  .whatsapp-logo {
+    width: 20px;  /* Adjust to desired size */
+    height: 20px; /* Maintain aspect ratio */
+    vertical-align: middle;
+  }
+  
+    .input-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .doubt-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      width: 100%;
+    }
+  
+    .form-card {
+      background-color: white;
+      border-radius: 20px;
+      padding: 20px;
+      width: auto;
+      max-width: 1000px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      box-sizing: border-box;
+    }
+  
+    .doubt-text h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    
+    .doubt-text p {
+      font-size: 0.8rem;
+      color: black;
+      margin-bottom: 5px;
+    }
+  }
+  
