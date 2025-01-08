@@ -37,7 +37,7 @@ function ContactForm() {
       <div className="doubt-content">
         <div className="doubt-text">
           <h2><strong>Have a doubt?</strong></h2>
-          <p>Start your preparation for UPSC exam. Ask your first question now.</p>
+          <p>Start your preparation for UPSC exam. Ask your first question now.</p> 
           <div className="phone-section">
             <span className="phone-icon">📞</span>
             <span className="whatsapp-icon">
@@ -45,6 +45,7 @@ function ContactForm() {
             </span>
             <span className="phone-number">9205053891</span>
           </div>
+          <div></div>
         </div>
 
         <div className="form-card">

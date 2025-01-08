@@ -78,7 +78,7 @@ export default function Home() {
       {showOverlay && (
         <div className="overlay" onClick={handleCloseOverlay}>
           <div className="overlay__content" onClick={(e) => e.stopPropagation()}>
-            <p>Please login to watch classes</p>
+            <p>Please login to watch sessions</p>
             <button className="overlay__login-button" 
   onClick={() => window.location.href = 'https://hbzxwj.courses.store/617877'}>
   Login

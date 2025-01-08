@@ -1,61 +1,62 @@
 /* Still In Doubt Section */
 .doubt-section {
-    background-color: #eaf4ff;
-    padding: 80px 10%;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .doubt-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    width: 100%;
-  }
-  
-  .doubt-text {
-    flex: 1;
-  }
-  
-  .doubt-text h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .doubt-text p {
-    font-size: 1.1rem;
-    color: black;
-    margin-bottom: 25px;
-  }
-  
-  .phone-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    margin-top: 20px;
-  }
-  
-  .phone-icon, .whatsapp-icon {
-    font-size: 1.6rem;
-    margin-right: 10px;
-  }
-  
-  .whatsapp-icon img {
-    vertical-align: middle;
-  }
-  
-  .whatsapp-logo {
-    width: 40px;  /* Adjust to desired size */
-    height: 40px; /* Maintain aspect ratio */
-    vertical-align: middle;
-  }
-  
-  .phone-number {
-    font-weight: bold;
-  }
+  background-color: #eaf4ff;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doubt-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 50px;
+}
+
+.doubt-text {
+  flex: 1;
+  text-align: left;
+}
+
+.doubt-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.doubt-text p {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.phone-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.phone-icon,
+.whatsapp-icon {
+  font-size: 1.2rem !important;
+  margin-right: 10px;
+}
+
+.whatsapp-logo {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.phone-number {
+  font-weight: bold;
+  font-size: 1.2rem !important;
+}
   
   /* Form Card */
   .form-card {
@@ -167,19 +168,24 @@
 /* For Tablets */
 @media (max-width: 1024px) {
   
-    .doubt-content {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .doubt-text {
-      padding-right: 0;
-      margin-bottom: 40px;
-    }
-  
-    .form-card {
-      max-width: 100%;
-    }
+  .doubt-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.doubt-text {
+    margin-bottom: 20px;
+}
+
+.form-card {
+    max-width: 100%;
+}
+
+.phone-section {
+    justify-content: center;
+}
   }
   
   /* For Mobile Devices */
@@ -200,7 +206,7 @@
   
   .phone-number {
     font-weight: bold;
-    font-size: 1.5rem !important;
+    /* font-size: 1.5rem !important; */
   }
   
   .whatsapp-logo {
@@ -244,5 +250,27 @@
       color: black;
       margin-bottom: 5px;
     }
+
+    .input-row {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .doubt-text h2 {
+      font-size: 2rem;
+  }
+
+  .doubt-text p {
+      font-size: 1rem;
+  }
+
+  .phone-number {
+      font-size: 1.3rem;
+  }
+
+  .whatsapp-logo {
+      width: 25px;
+      height: 25px;
+  }
   }
   

@@ -21,7 +21,7 @@ export default function Batch() {
     guidance: "✨ Free Resources",
     title: "Free UPSC Course",
     features: [
-      "📚 This is a free webinar session(course), where you can have a conversation with Dipendra Adhikari sir.",
+      "📚 Join this series of free webinars led by Dipendra Adhikari Sir (AIR 600 - CSE 2020), where you'll gain valuable insights into UPSC preparation and have the exclusive chance to interact directly with him.",
     ],
     image: "open.svg",
     buyLink: "https://hbzxwj.courses.store/617877",
