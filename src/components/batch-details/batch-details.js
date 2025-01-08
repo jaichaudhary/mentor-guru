@@ -2,6 +2,8 @@ import React from "react";
 import "./batch-details.css";
 
 const BatchDetails = ({ programDetails, activeBatch }) => {
+  const isFreeCourse = programDetails?.price === "Free";  // Condition to check if the course is free
+
   return (
     <div className="batch-details__container">
       {/* Batch Card */}
@@ -36,7 +38,7 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
             )}
           </ul>
           <div className="batch-details__buttons">
-            {/* Buy Button */}
+            {/* Buy or Join Now Button */}
             {programDetails?.buyLink && (
               <a
                 href={programDetails.buyLink}
@@ -44,7 +46,7 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
                 rel="noopener noreferrer"
                 className="batch-details__learn-more"
               >
-                Buy
+                {isFreeCourse ? "Join Now" : "Buy"}
               </a>
             )}
 

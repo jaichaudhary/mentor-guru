@@ -9,14 +9,24 @@ export default function Batch() {
     guidance: "✨ Comprehensive Preparation",
     title: "Combo Course (Prelims + CSAT)",
     features: [
-      "👥 Holistic coverage of the syllabus with customized individual plan in 4 Months",
+      "👥 Holistic coverage of the syllabus with customized individual plan in 4 Months", 
       "⭐ One Stop Solution for your Prelims GS paper I & II (CSAT)",
       "∞ Analysis of PYQs and identify patterns/themes for each subject",
     ],
     image: "combo.jpg",
     buyLink: "https://hbzxwj.courses.store/615608",
-    
   };
+
+  const freeCourse = {
+    guidance: "✨ Free Resources",
+    title: "Free UPSC Course",
+    features: [
+      "📚 This is a free webinar session(course), where you can have a conversation with Dipendra Adhikari sir.",
+    ],
+    image: "open.svg",
+    buyLink: "https://hbzxwj.courses.store/617877",
+    price: "Free"
+  }
 
   const batchPrograms = {
     Prelims: [
@@ -98,6 +108,7 @@ export default function Batch() {
       },
     ],
     Combo: [comboCourse],
+    Free: [freeCourse],
   };
 
   const allPrograms = [
@@ -147,6 +158,14 @@ export default function Batch() {
             onClick={() => setActiveBatch("Combo")}
           >
             Combo
+          </button>
+          <button
+            className={`batch-details__year-button ${
+              activeBatch === "Free" ? "active" : ""
+            }`}
+            onClick={() => setActiveBatch("Free")}
+          >
+            Free Course
           </button>
         </div>
       </section>
