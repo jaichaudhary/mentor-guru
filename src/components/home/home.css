@@ -94,6 +94,7 @@ span {
 }
 
 /* Overlay for Login */
+/* Overlay for Login */
 .overlay {
   position: fixed;
   top: 0;
@@ -112,12 +113,16 @@ span {
   padding: 40px 60px;
   border-radius: 12px;
   text-align: center;
+  width: 100%;
+  max-width: 400px; /* Limit popup width */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .overlay__content p {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .overlay__login-button {
@@ -138,23 +143,23 @@ span {
 /* Slider Adjustments */
 .slider {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  max-width: 900px;
-  height: auto;
+  max-width: 900px; /* Set maximum width for the slider */
   margin: 30px auto;
   overflow: hidden;
   border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  height: auto !important;
+  align-items: center;
+  background: transparent !important; /* Remove background color */
 }
 
 .slider img {
-  display: block;
   width: 100%;
   height: auto;
-  object-fit: cover;
-  cursor: pointer;
+  object-fit: cover; /* Ensures the image fills the slider without distortion */
+  display: block;
   opacity: 0;
   transition: opacity 1s ease-in-out;
   position: absolute;
@@ -165,10 +170,10 @@ span {
   position: relative;
 }
 
-/* Centered Slider Controls */
+/* Slider Controls */
 .slider-controls {
   position: absolute;
-  bottom: 15px;  /* Position below the slider */
+  bottom: 15px; /* Position below the slider */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -180,7 +185,7 @@ span {
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -276,6 +281,20 @@ span {
     font-size: 1.2rem;
     padding: 8px 14px;
   }
+
+  .overlay__content {
+    padding: 20px;
+    width: 90%; /* Adjust width for mobile screens */
+  }
+
+  .overlay__content p {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  .overlay__login-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 10px 20px; /* Smaller button padding */
+  }
 }
 
 @media (max-width: 480px) {
@@ -316,5 +335,19 @@ span {
   .slider-button {
     font-size: 1rem;
     padding: 6px 12px;
+  }
+
+  .overlay__content {
+    padding: 15px;
+    width: 95%; /* Further adjust width for smaller screens */
+  }
+
+  .overlay__content p {
+    font-size: 1rem; /* Even smaller font size for extra small screens */
+  }
+
+  .overlay__login-button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 8px 16px; /* Adjust padding for extra small screens */
   }
 }

@@ -51,7 +51,7 @@ export default function Home() {
         {banners.map((banner, index) => (
           <img
             key={index}
-            src={banner.src}
+            src={banner.src}  
             alt={banner.alt}
             className={`home__img ${index === currentSlide ? "active" : ""}`}
             onClick={handleImageClick}

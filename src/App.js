@@ -14,6 +14,7 @@ import FAQ from "./components/faq/faq";
 import Refund from "./components/policy/Refund";
 import Csat2025 from "./components/Csat2025/Csat2025";
 import PrelimsKaushal from "./components/prelims-kaushal/PrelimsKaushal";
+import BlogPage from "./components/blog/BlogPage";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/refund-policy" element={<Refund />} />
+          <Route path="/blogs" element={<BlogPage />} />
         </Routes>
         <Footer />
       </div>

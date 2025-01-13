@@ -25,8 +25,34 @@ export default function Batch() {
     ],
     image: "open.svg",
     buyLink: "https://hbzxwj.courses.store/617877",
-    price: "Free"
-  }
+    price: "Free",
+  };
+
+  const sociologyCourse = {
+    guidance: "✨ Optional Subject Mastery",
+    title: "Sociology Optional",
+    features: [
+      "👥 ONE-TO-ONE MENTORSHIP with ONE-TO-ONE DOUBT RESOLUTION",
+      "⭐ MACRO-PLANNING AND TIME MANAGEMENT with PYQ Analysis",
+      "∞ LIVE ANSWER WRITING SESSIONS with Live evaluation of 4 sectional and 2 FLTs",
+    ],
+    image: "SOCIOLOGY.jpg",
+    buyLink: "https://hbzxwj.courses.store/620343",
+    brochureLink: "https://drive.google.com/file/d/1l-jDj0c47JCJg-KnbMO9WkXhXUnePPNM/view?usp=sharing",
+  };
+
+  const psirCourse = {
+    guidance: "✨ Optional Subject Mastery",
+    title: "PSIR Optional",
+    features: [
+      "👥 ONE-TO-ONE MENTORSHIP with ONE-TO-ONE DOUBT RESOLUTION",
+      "⭐ MACRO-PLANNING AND TIME MANAGEMENT with PYQ Analysis",
+      "∞ LIVE ANSWER WRITING SESSIONS with Live evaluation of 4 sectional and 2 FLTs",
+    ],
+    image: "PSIR-OPTIONAL.jpg",
+    buyLink: "https://hbzxwj.courses.store/620339",
+    brochureLink: "https://drive.google.com/file/d/1lGF10e9uyAWap23aGC6YI-1HNdciYufV/view?usp=sharing",
+  };
 
   const batchPrograms = {
     Prelims: [
@@ -68,52 +94,14 @@ export default function Batch() {
         buyLink: "https://hbzxwj.courses.store/614924",
         brochureLink: "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
       },
-      {
-        guidance: "✨ Customized Support",
-        title: "Moksha",
-        features: [
-          "👥 Regular group sessions by Dipendra Adhikari sir",
-          "⭐ Continuous 1-1 mentorship by interview appeared experienced mentors.",
-          "∞ Comprehensive coverage of major subjects in a time-bound manner",
-        ],
-        image: "Metorship4.svg",
-        buyLink: "https://hbzxwj.courses.store/614913",
-        brochureLink: "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
-      },
     ],
-    "Answer Writing": [
-      {
-        guidance: "✨ Customized Support",
-        title: "Mains warriors 2025",
-        features: [
-          "👥 LIVE evaluation of unlimited answers and 20 essays.",
-          "⭐ Time-bound evaluation",
-          "∞ Accountability, consistency, and discipline",
-        ],
-        image: "Mains-warriors.jpg",
-        buyLink: "https://hbzxwj.courses.store/614930",
-        brochureLink: "https://drive.google.com/file/d/1MDpzibbOHQlwhc20VqOLqkT12ILrvkwP/view?usp=sharing",
-      },
-      {
-        guidance: "✨ Customized Support",
-        title: "SAMARTH",
-        features: [
-          "👥 Daily answer writing course for 2 months",
-          "⭐ Weekly one mentorship call",
-          "∞ Affordable course to develop discipline and consistency",
-        ],
-        image: "Answer2.svg",
-        buyLink: "https://hbzxwj.courses.store/614927",
-        brochureLink: "https://drive.google.com/file/d/1UiAowXicFqAkp2GQvz_p-PfBBSLjSSiT/view?usp=sharing",
-      },
-    ],
+    Sociology: [sociologyCourse],
+    "PSIR Optional": [psirCourse],
     Combo: [comboCourse],
     Free: [freeCourse],
   };
 
-  const allPrograms = [
-    ...Object.values(batchPrograms).flat(),
-  ];
+  const allPrograms = [...Object.values(batchPrograms).flat()];
 
   return (
     <div className="batch">
@@ -145,11 +133,19 @@ export default function Batch() {
           </button>
           <button
             className={`batch-details__year-button ${
-              activeBatch === "Answer Writing" ? "active" : ""
+              activeBatch === "Sociology" ? "active" : ""
             }`}
-            onClick={() => setActiveBatch("Answer Writing")}
+            onClick={() => setActiveBatch("Sociology")}
           >
-            Answer Writing
+            Sociology
+          </button>
+          <button
+            className={`batch-details__year-button ${
+              activeBatch === "PSIR Optional" ? "active" : ""
+            }`}
+            onClick={() => setActiveBatch("PSIR Optional")}
+          >
+            PSIR Optional
           </button>
           <button
             className={`batch-details__year-button ${
@@ -172,7 +168,7 @@ export default function Batch() {
 
       <div className="batch__programs">
         {(activeBatch === "All"
-          ? [...Object.values(batchPrograms).flat().filter((item) => item.title !== comboCourse.title), comboCourse]
+          ? allPrograms
           : batchPrograms[activeBatch]
         ).map((program, index) => (
           <BatchDetails

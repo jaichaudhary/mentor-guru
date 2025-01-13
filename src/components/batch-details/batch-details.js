@@ -1,14 +1,9 @@
 import React from "react";
 import "./batch-details.css";
-import { BUTTON_TEXT } from "./constants"; 
-
-const Pricing = Object.freeze({
-  FREE: "Free",
-  PAID: "Paid",
-});
+import { BUTTON_TEXT, PRICING } from "./constants"; // Adjusted path to constants.js
 
 const BatchDetails = ({ programDetails, activeBatch }) => {
-  const isFreeCourse = programDetails?.price === Pricing.FREE; 
+  const isFreeCourse = programDetails?.price === PRICING.FREE; // Use PRICING enum
 
   return (
     <div className="batch-details__container">
@@ -46,6 +41,7 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
             )}
           </ul>
           <div className="batch-details__buttons">
+            {/* Join/Buy Button */}
             {programDetails?.buyLink && (
               <a
                 href={programDetails.buyLink}
@@ -57,7 +53,7 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
               </a>
             )}
 
-           
+            {/* Brochure Button */}
             {programDetails?.brochureLink && (
               <a
                 href={programDetails.brochureLink}
