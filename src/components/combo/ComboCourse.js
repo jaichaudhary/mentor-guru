@@ -20,7 +20,7 @@ function ComboCourse() {
           </ol>
           <div className="price-container">
             <div className="price">₹ 3999</div>
-            <div className="tax">+ 18% taxes</div>
+            <div className="tax">+ Taxes</div>
           </div>
           <button className="buy-btn" onClick={() => window.location.href='https://hbzxwj.courses.store/614904'}>Buy Course</button>
         </div>
@@ -36,7 +36,7 @@ function ComboCourse() {
           </ol>
           <div className="price-container">
             <div className="price">₹ 1999</div>
-            <div className="tax">+ 18% taxes</div>
+            <div className="tax">+ Taxes</div>
           </div>
           <button className="buy-btn" onClick={() => window.location.href='https://hbzxwj.courses.store/614936'}>Buy Course</button>
         </div>
