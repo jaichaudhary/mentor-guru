@@ -9,7 +9,7 @@ export default function Batch() {
     guidance: "✨ Comprehensive Preparation",
     title: "Combo Course (Prelims + CSAT)",
     features: [
-      "👥 Holistic coverage of the syllabus with customized individual plan in 4 Months", 
+      "👥 Holistic coverage of the syllabus with customized individual plan in 4 Months",
       "⭐ One Stop Solution for your Prelims GS paper I & II (CSAT)",
       "∞ Analysis of PYQs and identify patterns/themes for each subject",
     ],
@@ -38,7 +38,8 @@ export default function Batch() {
     ],
     image: "SOCIOLOGY.jpg",
     buyLink: "https://hbzxwj.courses.store/620343",
-    brochureLink: "https://drive.google.com/file/d/1l-jDj0c47JCJg-KnbMO9WkXhXUnePPNM/view?usp=sharing",
+    brochureLink:
+      "https://drive.google.com/file/d/113AHQ6zNPQ-909qW9iH3L53CeBAEIZxs/view?usp=sharing",
   };
 
   const psirCourse = {
@@ -51,7 +52,8 @@ export default function Batch() {
     ],
     image: "PSIR-OPTIONAL.jpg",
     buyLink: "https://hbzxwj.courses.store/620339",
-    brochureLink: "https://drive.google.com/file/d/1lGF10e9uyAWap23aGC6YI-1HNdciYufV/view?usp=sharing",
+    brochureLink:
+      "https://drive.google.com/file/d/1MuC4H2TUuY-iR5i8LimVVw7tX9TbX00h/view?usp=sharing",
   };
 
   const batchPrograms = {
@@ -66,7 +68,8 @@ export default function Batch() {
         ],
         image: "prelims.svg",
         buyLink: "https://hbzxwj.courses.store/614904",
-        brochureLink: "https://drive.google.com/file/d/1OyFeqY8jiJaS3Maox6bjC_ZNNJ0Selz6/view?usp=sharing",
+        brochureLink:
+          "https://drive.google.com/file/d/1OyFeqY8jiJaS3Maox6bjC_ZNNJ0Selz6/view?usp=sharing",
       },
       {
         guidance: "✨ Customized Support",
@@ -78,7 +81,8 @@ export default function Batch() {
         ],
         image: "CSAT-COURSE-2025.jpg",
         buyLink: "https://hbzxwj.courses.store/614936",
-        brochureLink: "https://drive.google.com/file/d/1YBvWh4wTRUkydtuTFFjv8-pDF735NoDB/view?usp=sharing",
+        brochureLink:
+          "https://drive.google.com/file/d/1YBvWh4wTRUkydtuTFFjv8-pDF735NoDB/view?usp=sharing",
       },
     ],
     Mains: [
@@ -92,15 +96,19 @@ export default function Batch() {
         ],
         image: "moksha-plus.jpg",
         buyLink: "https://hbzxwj.courses.store/614924",
-        brochureLink: "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
+        brochureLink:
+          "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
       },
     ],
-    Sociology: [sociologyCourse],
-    "PSIR Optional": [psirCourse],
+
+    // --- Combine Sociology and PSIR into a single "Optional" tab ---
+    Optional: [sociologyCourse, psirCourse],
+
     Combo: [comboCourse],
     Free: [freeCourse],
   };
 
+  // Flatten all programs into a single array for the "All" tab
   const allPrograms = [...Object.values(batchPrograms).flat()];
 
   return (
@@ -131,22 +139,18 @@ export default function Batch() {
           >
             Mains
           </button>
+
+          {/* Removed individual "Sociology" & "PSIR Optional" buttons 
+              and replaced with a single "Optional" button */}
           <button
             className={`batch-details__year-button ${
-              activeBatch === "Sociology" ? "active" : ""
+              activeBatch === "Optional" ? "active" : ""
             }`}
-            onClick={() => setActiveBatch("Sociology")}
+            onClick={() => setActiveBatch("Optional")}
           >
-            Sociology
+            Optional
           </button>
-          <button
-            className={`batch-details__year-button ${
-              activeBatch === "PSIR Optional" ? "active" : ""
-            }`}
-            onClick={() => setActiveBatch("PSIR Optional")}
-          >
-            PSIR Optional
-          </button>
+
           <button
             className={`batch-details__year-button ${
               activeBatch === "Combo" ? "active" : ""

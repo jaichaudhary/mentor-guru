@@ -4,9 +4,9 @@ import "./topstrip.css";
 function TopStrip() {
   return (
     <div className="topstrip">
-      Get 1:1 DAF analysis with Dipendra Adhikari
+      Have a doubt? Get call back from team.
       <a 
-        href="https://forms.gle/AMMQNJDRif5PK1oVA" 
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdo9ll59vgBzjccHPlbHK_Ggdop0akf7_3-iqPIIZyUVVu3lQ/viewform?usp=sf_link" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="topstrip__button"
