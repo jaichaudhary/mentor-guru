@@ -38,9 +38,7 @@ function Navbar() {
           <a href="/csat-2025" className="nav__link">
             CSAT Course 2025
           </a>
-          {/* <a href="/blogs" className="nav__link">
-            Blog
-          </a> */}
+          
         </nav>
       )}
 

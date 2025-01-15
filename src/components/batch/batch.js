@@ -105,14 +105,14 @@ export default function Batch() {
       },
     ],
 
-    // --- Combine Sociology and PSIR into a single "Optional" tab ---
+  
     Optional: [sociologyCourse, psirCourse],
 
     Combo: [comboCourse],
     Free: [freeCourse],
   };
 
-  // Flatten all programs into a single array for the "All" tab
+  
   const allPrograms = [...Object.values(batchPrograms).flat()];
 
   return (
@@ -173,8 +173,7 @@ export default function Batch() {
             Mains
           </button>
 
-          {/* Removed individual "Sociology" & "PSIR Optional" buttons 
-              and replaced with a single "Optional" button */}
+         
           <button
             className={`batch-details__year-button ${
               activeBatch === "Optional" ? "active" : ""
