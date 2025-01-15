@@ -5,6 +5,7 @@ import { db } from '../firebase/firebaseConfig';
 import { ref, push } from "firebase/database"; 
 import CsatFaq from '../faq/CsatFaq';
 import ComboCourse from '../combo/ComboCourse';
+import ContactForm from '../form/ContactForm';
 
 
 function Csat2025() {
@@ -112,27 +113,27 @@ const handleSubmit = async (e) => {
       {
         title: "Live Coverage of CSAT",
         description: "Live coverage of CSAT syllabus; Quantitative Aptitude, Reading Comprehension, Logical Reasoning",
-        icon: <i className="fas fa-tv"></i>  // TV icon for live coverage
+        icon: <i className="fas fa-tv"></i>  
       },
       {
         title: "Daily Practice Sheet",
         description: "Handout and practice sheet after every class",
-        icon: <i className="fas fa-file-alt"></i>  // Document icon for practice sheets
+        icon: <i className="fas fa-file-alt"></i>  
       },
       {
         title: "Test Series",
         description: "4 sectional tests and 2 full length tests. Analysis of tests",
-        icon: <i className="fas fa-clipboard-check"></i>  // Clipboard icon for test series
+        icon: <i className="fas fa-clipboard-check"></i> 
       },
       {
         title: "PYQ's",
         description: "Coverage of last 10 years previous questions",
-        icon: <i className="fas fa-book-open"></i>  // Book icon for PYQs
+        icon: <i className="fas fa-book-open"></i> 
       },
       {
         title: "Mentorship",
         description: "Mentorship sessions will be conducted on regular basis",
-        icon: <i className="fas fa-chalkboard-teacher"></i>  // Teacher icon for mentorship
+        icon: <i className="fas fa-chalkboard-teacher"></i> 
       }
     ].map((feature, index) => (
       <div className="feature-card" key={index}>
@@ -144,112 +145,8 @@ const handleSubmit = async (e) => {
         </div>
       </div>
 
-      {/* Mentorship Section */}
-      {/* <div className="mentorship-section">
-        <div className="mentorship-content">
-          <div className="mentorship-info">
-            <h2>COMBO <span className="highlight-text">COURSE</span></h2>
-            <p>Prelims Kaushal + CSAT Course 2025</p>
-            <button 
-  className="mentorship-button"
-  onClick={() => window.location.href='https://razorpay.me/@mentorguru?amount=1dWOigOTbkIj7L%2BG4LNf0A%3D%3D'}
->
-  Enroll Now
-</button>
-          </div>
-
-          
-        </div>
-      </div> */}
-
       <ComboCourse />
-
-
-      {/* Still In Doubt Section */}
-      <div className="doubt-section">
-        <div className="doubt-content">
-          <div className="doubt-text">
-            <h2><strong>Have a doubt?</strong></h2>
-            <p>Start your preparation for UPSC exam. Ask your first question now.</p>
-            <div className="phone-section">
-              <span className="phone-icon">📞</span>
-              <span className="whatsapp-icon">
-    <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp" width="20" className="whatsapp-logo" />
-  </span>
-              <span className="phone-number">9205053891</span> {/* add whatsapp logo */}
-            </div>
-          </div>
-
-          <div className="form-card">
-            <h2 className="form-title">Get in Touch</h2>
-            <p className="form-subtext">You can reach us anytime</p>
-            
-            {/* Form with Realtime Database Submission */}
-            <form onSubmit={handleSubmit}>
-              <div className="input-row">
-                <input 
-                  type="text" 
-                  name="firstName"
-                  placeholder="First name" 
-                  value={formData.firstName} 
-                  onChange={handleChange} 
-                  required 
-                />
-                <input 
-                  type="text" 
-                  name="lastName"
-                  placeholder="Last name" 
-                  value={formData.lastName} 
-                  onChange={handleChange} 
-                  required 
-                />
-              </div>
-
-              <div className="input-group">
-                <input 
-                  type="email" 
-                  name="email"
-                  placeholder="Your email" 
-                  value={formData.email} 
-                  onChange={handleChange} 
-                  required 
-                />
-              </div>
-
-              <div className="input-group">
-                <input 
-                  type="text" 
-                  name="phone"
-                  placeholder="Phone number" 
-                  value={formData.phone} 
-                  onChange={handleChange} 
-                  required 
-                />
-              </div>
-
-              <div className="input-group">
-              <select 
-  name="course" 
-  value={formData.course} 
-  onChange={handleChange} 
-  required
->
-  <option value="" disabled>Select your course</option>
-  <option value="csat-2025">CSAT COURSE 2025</option>
-  <option value="prelims-kaushal">PRELIMS KAUSHAL</option>
-  <option value="moksha">MOKSHA</option>
-  <option value="moksha-plus">MOKSHA PLUS</option>
-  <option value="samarth">SAMARTH</option>
-  <option value="mains-warrior">MAINS WARRIOR</option>
-  <option value="combo-course">COMBO COURSE</option>
-</select>
-              </div>
-
-              <button type="submit" className="submit-button">Submit</button>
-            </form>
-          </div>
-        </div>
-      </div>
+      <ContactForm />
     </div>
 
     <CsatFaq />

@@ -4,6 +4,10 @@ import "./batch.css";
 
 export default function Batch() {
   const [activeBatch, setActiveBatch] = useState("All");
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => setShowDropdown((prev) => !prev);
+
 
   const comboCourse = {
     guidance: "✨ Comprehensive Preparation",
@@ -15,7 +19,45 @@ export default function Batch() {
     ],
     image: "combo.jpg",
     buyLink: "https://hbzxwj.courses.store/615608",
-    
+  };
+
+  const freeCourse = {
+    guidance: "✨ Free Resources",
+    title: "Free UPSC Course",
+    features: [
+      "📚 Join this series of free webinars led by Dipendra Adhikari Sir (AIR 600 - CSE 2020), where you'll gain valuable insights into UPSC preparation and have the exclusive chance to interact directly with him.",
+    ],
+    image: "open.svg",
+    buyLink: "https://hbzxwj.courses.store/617877",
+    price: "Free",
+  };
+
+  const sociologyCourse = {
+    guidance: "✨ Optional Subject Mastery",
+    title: "Sociology Optional",
+    features: [
+      "👥 One-to-One Metorship with one-to-one doubt resolution",
+      "⭐️ Macro-Planning and time management with pyq analysis",
+      "∞ Live Answer Writing sessions with live evaluation of 4 Sectional and 2 FLTs",
+    ],
+    image: "SOCIOLOGY.jpg",
+    buyLink: "https://hbzxwj.courses.store/620343",
+    brochureLink:
+      "https://drive.google.com/file/d/113AHQ6zNPQ-909qW9iH3L53CeBAEIZxs/view?usp=sharing",
+  };
+
+  const psirCourse = {
+    guidance: "✨ Optional Subject Mastery",
+    title: "PSIR Optional",
+    features: [
+      "👥 One-to-One Metorship with one-to-one doubt resolution",
+      "⭐️ Macro-Planning and time management with pyq analysis",
+      "∞ Live Answer Writing sessions with live evaluation of 4 Sectional and 2 FLTs",
+    ],
+    image: "PSIR-OPTIONAL.jpg",
+    buyLink: "https://hbzxwj.courses.store/620339",
+    brochureLink:
+      "https://drive.google.com/file/d/1MuC4H2TUuY-iR5i8LimVVw7tX9TbX00h/view?usp=sharing",
   };
 
   const batchPrograms = {
@@ -30,7 +72,8 @@ export default function Batch() {
         ],
         image: "prelims.svg",
         buyLink: "https://hbzxwj.courses.store/614904",
-        brochureLink: "https://drive.google.com/file/d/1OyFeqY8jiJaS3Maox6bjC_ZNNJ0Selz6/view?usp=sharing",
+        brochureLink:
+          "https://drive.google.com/file/d/1OyFeqY8jiJaS3Maox6bjC_ZNNJ0Selz6/view?usp=sharing",
       },
       {
         guidance: "✨ Customized Support",
@@ -42,7 +85,8 @@ export default function Batch() {
         ],
         image: "CSAT-COURSE-2025.jpg",
         buyLink: "https://hbzxwj.courses.store/614936",
-        brochureLink: "https://drive.google.com/file/d/1YBvWh4wTRUkydtuTFFjv8-pDF735NoDB/view?usp=sharing",
+        brochureLink:
+          "https://drive.google.com/file/d/1YBvWh4wTRUkydtuTFFjv8-pDF735NoDB/view?usp=sharing",
       },
     ],
     Mains: [
@@ -56,58 +100,54 @@ export default function Batch() {
         ],
         image: "moksha-plus.jpg",
         buyLink: "https://hbzxwj.courses.store/614924",
-        brochureLink: "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
-      },
-      {
-        guidance: "✨ Customized Support",
-        title: "Moksha",
-        features: [
-          "👥 Regular group sessions by Dipendra Adhikari sir",
-          "⭐ Continuous 1-1 mentorship by interview appeared experienced mentors.",
-          "∞ Comprehensive coverage of major subjects in a time-bound manner",
-        ],
-        image: "Metorship4.svg",
-        buyLink: "https://hbzxwj.courses.store/614913",
-        brochureLink: "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
+        brochureLink:
+          "https://drive.google.com/file/d/1nrMS5ZJ_dPqoI3jrqIPGB1gWUDTizECq/view?usp=sharing",
       },
     ],
-    "Answer Writing": [
-      {
-        guidance: "✨ Customized Support",
-        title: "Mains warriors 2025",
-        features: [
-          "👥 LIVE evaluation of unlimited answers and 20 essays.",
-          "⭐ Time-bound evaluation",
-          "∞ Accountability, consistency, and discipline",
-        ],
-        image: "Mains-warriors.jpg",
-        buyLink: "https://hbzxwj.courses.store/614930",
-        brochureLink: "https://drive.google.com/file/d/1MDpzibbOHQlwhc20VqOLqkT12ILrvkwP/view?usp=sharing",
-      },
-      {
-        guidance: "✨ Customized Support",
-        title: "SAMARTH",
-        features: [
-          "👥 Daily answer writing course for 2 months",
-          "⭐ Weekly one mentorship call",
-          "∞ Affordable course to develop discipline and consistency",
-        ],
-        image: "Answer2.svg",
-        buyLink: "https://hbzxwj.courses.store/614927",
-        brochureLink: "https://drive.google.com/file/d/1UiAowXicFqAkp2GQvz_p-PfBBSLjSSiT/view?usp=sharing",
-      },
-    ],
+
+  
+    Optional: [sociologyCourse, psirCourse],
+
     Combo: [comboCourse],
+    Free: [freeCourse],
   };
 
-  const allPrograms = [
-    ...Object.values(batchPrograms).flat(),
-  ];
+  
+  const allPrograms = [...Object.values(batchPrograms).flat()];
 
   return (
     <div className="batch">
       <section className="batch-details__header">
+        <div className="buttonbox">Click Here for Courses</div>
+        {/* Dropdown Menu for Mobile View */}
+        <div className="batch-details__dropdown">
+          <button
+            className="batch-details__dropdown-toggle"
+            onClick={toggleDropdown}
+          >
+            {activeBatch}
+          </button>
+          {showDropdown && (
+            <ul className="batch-details__dropdown-menu">
+              {Object.keys(batchPrograms).concat("All").map((batch) => (
+                <li
+                  key={batch}
+                  className={`batch-details__dropdown-item ${
+                    activeBatch === batch ? "active" : ""
+                  }`}
+                  onClick={() => {
+                    setActiveBatch(batch);
+                    setShowDropdown(false);
+                  }}
+                >
+                  {batch}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
         <div className="batch-details__year-buttons">
+
           <button
             className={`batch-details__year-button ${
               activeBatch === "All" ? "active" : ""
@@ -132,14 +172,17 @@ export default function Batch() {
           >
             Mains
           </button>
+
+         
           <button
             className={`batch-details__year-button ${
-              activeBatch === "Answer Writing" ? "active" : ""
+              activeBatch === "Optional" ? "active" : ""
             }`}
-            onClick={() => setActiveBatch("Answer Writing")}
+            onClick={() => setActiveBatch("Optional")}
           >
-            Answer Writing
+            Optional
           </button>
+
           <button
             className={`batch-details__year-button ${
               activeBatch === "Combo" ? "active" : ""
@@ -148,12 +191,20 @@ export default function Batch() {
           >
             Combo
           </button>
+          <button
+            className={`batch-details__year-button ${
+              activeBatch === "Free" ? "active" : ""
+            }`}
+            onClick={() => setActiveBatch("Free")}
+          >
+            Free Course
+          </button>
         </div>
       </section>
 
       <div className="batch__programs">
         {(activeBatch === "All"
-          ? [...Object.values(batchPrograms).flat().filter((item) => item.title !== comboCourse.title), comboCourse]
+          ? allPrograms
           : batchPrograms[activeBatch]
         ).map((program, index) => (
           <BatchDetails

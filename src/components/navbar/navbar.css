@@ -102,12 +102,28 @@
 /* Mobile-specific styles */
 @media screen and (max-width: 767px) {
   .header {
-    position: fixed; /* Fix the navbar to the bottom for mobile */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
     bottom: 0;
-    top: initial; /* Remove top positioning */
-    z-index: 1000; /* Ensure it stays above content */
+    top: initial;
+    z-index: 1000;
     padding: 10px 15px;
     background-color: var(--nav-back-color);
+    flex-direction: row; /* Ensures items align horizontally */
+  }
+
+  .nav__login {
+    order: 1; /* Ensure Login button appears first */
+    font-size: 0.8rem; /* Adjust button text size */
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .nav__hamburger {
+    order: 2; /* Ensure Hamburger appears next */
+    margin-left: 10px; /* Space between Login and Hamburger */
   }
 
   .nav__logo {

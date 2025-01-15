@@ -1,14 +1,17 @@
 import React from "react";
 import "./batch-details.css";
+import { BUTTON_TEXT, PRICING } from "./constants"; // Adjusted path to constants.js
 
 const BatchDetails = ({ programDetails, activeBatch }) => {
+  const isFreeCourse = programDetails?.price === PRICING.FREE; // Use PRICING enum
+
   return (
     <div className="batch-details__container">
       {/* Batch Card */}
       <div className="batch-details__card">
         <div className="batch-details__left">
           <img
-            src={programDetails?.image || "1-1_mentorship.png"} 
+            src={programDetails?.image || "1-1_mentorship.png"}
             alt={programDetails?.title || "1-1 Mentorship"}
             className="batch-details__image"
           />
@@ -29,14 +32,16 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
             ) : (
               <>
                 <li>👥 Get Accountability partner</li>
-                <li>⭐ Complete preparation for Prelims & Mains {activeBatch}</li>
+                <li>
+                  ⭐ Complete preparation for Prelims & Mains {activeBatch}
+                </li>
                 <li>∞ Unlimited access to SuperKalam</li>
                 <li>🎁 Test Series worth ₹25K</li>
               </>
             )}
           </ul>
           <div className="batch-details__buttons">
-            {/* Buy Button */}
+            {/* Join/Buy Button */}
             {programDetails?.buyLink && (
               <a
                 href={programDetails.buyLink}
@@ -44,11 +49,11 @@ const BatchDetails = ({ programDetails, activeBatch }) => {
                 rel="noopener noreferrer"
                 className="batch-details__learn-more"
               >
-                Buy
+                {isFreeCourse ? BUTTON_TEXT.JOIN_NOW : BUTTON_TEXT.BUY}
               </a>
             )}
 
-            {/* Conditional Rendering for Brochure Button */}
+            {/* Brochure Button */}
             {programDetails?.brochureLink && (
               <a
                 href={programDetails.brochureLink}
