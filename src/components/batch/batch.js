@@ -4,6 +4,10 @@ import "./batch.css";
 
 export default function Batch() {
   const [activeBatch, setActiveBatch] = useState("All");
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  const toggleDropdown = () => setShowDropdown((prev) => !prev);
+
 
   const comboCourse = {
     guidance: "✨ Comprehensive Preparation",
@@ -114,7 +118,36 @@ export default function Batch() {
   return (
     <div className="batch">
       <section className="batch-details__header">
+        <div className="buttonbox">Click Here for Courses</div>
+        {/* Dropdown Menu for Mobile View */}
+        <div className="batch-details__dropdown">
+          <button
+            className="batch-details__dropdown-toggle"
+            onClick={toggleDropdown}
+          >
+            {activeBatch}
+          </button>
+          {showDropdown && (
+            <ul className="batch-details__dropdown-menu">
+              {Object.keys(batchPrograms).concat("All").map((batch) => (
+                <li
+                  key={batch}
+                  className={`batch-details__dropdown-item ${
+                    activeBatch === batch ? "active" : ""
+                  }`}
+                  onClick={() => {
+                    setActiveBatch(batch);
+                    setShowDropdown(false);
+                  }}
+                >
+                  {batch}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
         <div className="batch-details__year-buttons">
+
           <button
             className={`batch-details__year-button ${
               activeBatch === "All" ? "active" : ""

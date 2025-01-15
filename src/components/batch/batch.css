@@ -11,3 +11,86 @@
   color: black;
   margin-top: 20px;
 }
+
+
+/* Dropdown Button Style for Mobile */
+.batch-details__dropdown-toggle {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-family: var(--body-font);
+  border: none;
+  background-color: #f0e0d0; /* Light beige background */
+  color: #333; /* Text color */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+}
+
+.batch-details__dropdown-toggle:hover,
+.batch-details__dropdown-toggle.active {
+  background-color: #ff6a00; /* Orange background for hover/active */
+  color: #fff; /* White text color for hover/active */
+}
+
+/* Dropdown Menu Items */
+.batch-details__dropdown-menu {
+  margin-top: 10px;
+  padding: 0;
+  list-style: none;
+  border-radius: 10px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+  width: fit-content;
+  padding: 5px;
+}
+
+.batch-details__dropdown-item {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  font-family: var(--body-font);
+  color: #333; /* Text color */
+  background-color: #f0e0d0; /* Light beige background */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  margin: 5px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+.batch-details__dropdown-item:hover,
+.batch-details__dropdown-item.active {
+  background-color: #ff6a00; /* Orange background for hover/active */
+  color: #fff; /* White text color */
+}
+
+.buttonbox {
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-family: var(--body-font);
+  border: none;
+  
+  color: #333; /* Text color */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+  .batch-details__year-buttons {
+    display: none; /* Hide the year buttons on mobile */
+  }
+
+  .batch-details__dropdown {
+    display: block; /* Show the dropdown menu on mobile */
+  }
+}
+
+@media (min-width: 768px) {
+  .batch-details__dropdown {
+    display: none; /* Hide the dropdown menu on desktop */
+  }
+}
